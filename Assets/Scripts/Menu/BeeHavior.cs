@@ -5,9 +5,10 @@ using UnityEngine;
 public class BeeHavior : MonoBehaviour
 {
     public MenuBeeManager _mbm;
+    public Rigidbody _rb;
+    public Animator _an;
     public Transform flowerPoint;
     public Transform exitPoint;
-    public Rigidbody _rb;
 
     public float speed;
     public int index;
@@ -21,6 +22,7 @@ public class BeeHavior : MonoBehaviour
     void Start()
     {
         _rb = this.gameObject.GetComponent<Rigidbody>();
+        _an = this.transform.GetChild(0).gameObject.GetComponent<Animator>();
         
         speed = Random.Range(0.3f, 2f);
 
@@ -64,6 +66,8 @@ public class BeeHavior : MonoBehaviour
         {
             _rb.velocity = new Vector3(0, 0, 0);
         }
+
+        _an.SetBool("moving", moving);
     }
 
     public void TurnToExit()

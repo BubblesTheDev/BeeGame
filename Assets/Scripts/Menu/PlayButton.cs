@@ -14,7 +14,7 @@ public class PlayButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playMaterial = GetComponent<MeshRenderer>().materials[1];
+        playMaterial = GetComponent<MeshRenderer>().materials[0];
         originalColor = playMaterial.color;
     }
 
