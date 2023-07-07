@@ -31,7 +31,7 @@ public class BeeHavior : MonoBehaviour
         moving = true;
         leaving = false;
 
-        Invoke("GlitchFix", 100);
+        Invoke("GlitchFix", 20);
     }
 
     // Update is called once per frame
@@ -43,6 +43,7 @@ public class BeeHavior : MonoBehaviour
         if (distanceFromFlower <= 0.05f && distanceFromFlower >= -0.05f && !leaving && moving)
         {
             moving = false;
+            Invoke("RotateToFlower", 0.2f);
             Invoke("TurnToExit", 1);
         }
 
@@ -63,6 +64,11 @@ public class BeeHavior : MonoBehaviour
         _an.SetBool("moving", moving);
     }
 
+    public void RotateToFlower()
+    {
+        transform.rotation = flowerPoint.rotation;
+    }
+
     public void TurnToExit()
     {
         transform.LookAt(exitPoint);
@@ -70,7 +76,6 @@ public class BeeHavior : MonoBehaviour
         moving = true;
 
         Invoke("GlitchFix", 20);
-        print("oh no");
     }
 
     public void ExitAndRespawn()
@@ -90,5 +95,6 @@ public class BeeHavior : MonoBehaviour
     public void GlitchFix()
     {
         ExitAndRespawn();
+        print("oh no");
     }
 }
