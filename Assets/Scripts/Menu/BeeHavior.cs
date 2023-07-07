@@ -24,12 +24,14 @@ public class BeeHavior : MonoBehaviour
         _rb = this.gameObject.GetComponent<Rigidbody>();
         _an = this.transform.GetChild(0).gameObject.GetComponent<Animator>();
         
-        speed = Random.Range(0.3f, 2f);
+        speed = Random.Range(2f, 6f);
 
         transform.LookAt(flowerPoint);
 
         moving = true;
         leaving = false;
+
+        Invoke("GlitchFix", 100);
     }
 
     // Update is called once per frame
@@ -38,7 +40,7 @@ public class BeeHavior : MonoBehaviour
         distanceFromFlower = Vector3.Distance(transform.position, flowerPoint.position);
         distanceFromExit = Vector3.Distance(transform.position, exitPoint.position);
 
-        if (distanceFromFlower <= 0.05f && distanceFromFlower >= -0.05f && !leaving)
+        if (distanceFromFlower <= 0.05f && distanceFromFlower >= -0.05f && !leaving && moving)
         {
             moving = false;
             Invoke("TurnToExit", 1);
@@ -46,16 +48,7 @@ public class BeeHavior : MonoBehaviour
 
         if (leaving && distanceFromExit <= 0.01f)
         {
-            for (int i = 0; i < _mbm.beeSpawnInScene.Count; i++)
-            {
-                if (_mbm.beeSpawnInScene[i] == this.gameObject)
-                {
-                    _mbm.beeSpawnInScene.RemoveAt(i);
-                }
-            }
-
-            _mbm.BeeSpawn();
-            Destroy(this.gameObject);
+            ExitAndRespawn();
         }
 
         if (moving)
@@ -75,5 +68,27 @@ public class BeeHavior : MonoBehaviour
         transform.LookAt(exitPoint);
         leaving = true;
         moving = true;
+
+        Invoke("GlitchFix", 20);
+        print("oh no");
+    }
+
+    public void ExitAndRespawn()
+    {
+        for (int i = 0; i < _mbm.beeSpawnInScene.Count; i++)
+        {
+            if (_mbm.beeSpawnInScene[i] == this.gameObject)
+            {
+                _mbm.beeSpawnInScene.RemoveAt(i);
+            }
+        }
+
+        _mbm.BeeSpawn();
+        Destroy(this.gameObject);
+    }
+
+    public void GlitchFix()
+    {
+        ExitAndRespawn();
     }
 }

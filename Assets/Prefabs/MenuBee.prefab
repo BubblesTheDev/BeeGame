@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5985963673798599940}
   - component: {fileID: -6383321423028892063}
   - component: {fileID: -3268680421395678195}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MenuBee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 3073523431329575909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4160618336006460901}
   m_Father: {fileID: 0}
@@ -47,9 +47,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mbm: {fileID: 0}
+  _rb: {fileID: 0}
+  _an: {fileID: 0}
   flowerPoint: {fileID: 0}
   exitPoint: {fileID: 0}
-  _rb: {fileID: 0}
   speed: 0
   index: 0
 --- !u!54 &-3268680421395678195
@@ -91,7 +92,7 @@ GameObject:
   - component: {fileID: 5902277923606951957}
   - component: {fileID: 8379902681088156991}
   - component: {fileID: 401307795000005460}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: VisualMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
