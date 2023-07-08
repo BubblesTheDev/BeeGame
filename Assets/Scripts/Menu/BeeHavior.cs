@@ -22,7 +22,7 @@ public class BeeHavior : MonoBehaviour
     void Start()
     {
         _rb = this.gameObject.GetComponent<Rigidbody>();
-        _an = this.transform.GetChild(0).gameObject.GetComponent<Animator>();
+        _an = this.transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Animator>();
         
         speed = Random.Range(2f, 6f);
 
@@ -66,6 +66,7 @@ public class BeeHavior : MonoBehaviour
 
     public void RotateToFlower()
     {
+        flowerPoint.parent.gameObject.GetComponent<FlowerAnimation>().RussleFlower();
         transform.rotation = flowerPoint.rotation;
     }
 
