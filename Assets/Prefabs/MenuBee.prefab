@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5985963673798599940}
   - component: {fileID: -6383321423028892063}
   - component: {fileID: -3268680421395678195}
+  - component: {fileID: 3049213703733149383}
   m_Layer: 3
   m_Name: MenuBee
   m_TagString: Untagged
@@ -80,6 +81,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3049213703733149383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3073523431329575909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1249633398
+      Data2: 1271648264
+      Data3: -1717525374
+      Data4: -1609018702
+    Path: event:/Sound_Bee_Buzz
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 2.8
+  OverrideMaxDistance: 20
 --- !u!1 &4425361495676331962
 GameObject:
   m_ObjectHideFlags: 0

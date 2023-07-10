@@ -47,7 +47,7 @@ public class BeeHavior : MonoBehaviour
             Invoke("TurnToExit", 1);
         }
 
-        if (leaving && distanceFromExit <= 0.01f)
+        if (leaving && distanceFromExit <= 0.05f && distanceFromExit >= -0.05f)
         {
             ExitAndRespawn();
         }
