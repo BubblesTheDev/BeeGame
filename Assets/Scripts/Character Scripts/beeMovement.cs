@@ -15,7 +15,6 @@ public class beeMovement : MonoBehaviour
     [Header("Statistics")]
     [SerializeField] private float cameraMoveDeadzoneRange = 1f;
     [SerializeField] private LayerMask layerToHit;
-    private Vector3 prevMousePos;
 
     private void Awake()
     {
@@ -27,10 +26,8 @@ public class beeMovement : MonoBehaviour
 
     private void Update()
     {
-        if (prevMousePos != Input.mousePosition) findPath();
+        if (Input.GetMouseButtonDown(0)) findPath();
 
-        //Sets the last frames mouse position at the end of the frame call.
-        prevMousePos = Input.mousePosition;
     }
 
     private void findPath()
@@ -41,7 +38,6 @@ public class beeMovement : MonoBehaviour
         //This detects if anything is hit at all
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerToHit.value))
         {
-
             //This ensures that when you put the mouse over the bee, they arent permanently moving unless you are EXACTLY on top of them
             if (Vector3.Distance(hit.point, playerObj.transform.position) > cameraMoveDeadzoneRange)
             {
