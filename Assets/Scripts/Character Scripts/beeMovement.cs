@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Timeline;
@@ -7,60 +9,96 @@ using UnityEngine.Timeline;
 public class beeMovement : MonoBehaviour
 {
     [Header("Addressables")]
-    [SerializeField] private GameObject cameraHolder;
     [SerializeField] private Camera mainCam;
-    [SerializeField] private GameObject playerObj;
     [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private GameObject movementCursor;
+    [SerializeField] private GameObject placedCursor;
 
     [Header("Statistics")]
-    [SerializeField] private float cameraMoveDeadzoneRange = 1f;
     [SerializeField] private LayerMask layerToHit;
+    [SerializeField] private float distanceToMoveCursor;
+    private RaycastHit hit;
+    private Ray mouseAimRay;
 
     private void Awake()
     {
-        cameraHolder = this.gameObject;
         mainCam = Camera.main;
-        playerObj = GameObject.FindGameObjectWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
     }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0)) findPath();
+        //Creates a ray from the camera through the mouse position on the screen to the ground
+        mouseAimRay = mainCam.ScreenPointToRay(Input.mousePosition);
+        Physics.Raycast(mouseAimRay, out hit, Mathf.Infinity, layerToHit.value);
+
+        //Adding a coding failsafe
+        if (movementCursor == null)
+        {
+            Debug.LogWarning("There is no object assigned in the: Movement Cursor variable within the inspector. Please assign it and try again");
+            return;
+        }
+        else
+        {
+            //This just moves the movement cursor to where the player is aiming
+            if (hit.point != null) movementCursor.transform.position = hit.point;
+        }
+
+
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            findPath();
+            placeMovementCursor();
+        }
+
+        if (Vector3.Distance(gameObject.transform.position, agent.destination) < distanceToMoveCursor)
+        {
+            removePlacedCursor();
+        }
 
     }
 
     private void findPath()
     {
-        //Creates a ray from the camera through the mouse position on the screen to the ground
-        Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
+
         //This detects if anything is hit at all
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerToHit.value))
+        if (hit.point != null)
         {
-            //This ensures that when you put the mouse over the bee, they arent permanently moving unless you are EXACTLY on top of them
-            if (Vector3.Distance(hit.point, playerObj.transform.position) > cameraMoveDeadzoneRange)
-            {
-                agent.SetDestination(hit.point);
-            }
+            agent.SetDestination(hit.point);
         }
     }
 
-    //Debug drawing
-    private void OnDrawGizmosSelected()
+
+
+    private void placeMovementCursor()
     {
-
-        Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerToHit.value))
+        //Adding a coding failsafe
+        if (placedCursor == null)
         {
-            //This changes the color of the wire sphere bellow based on if the player is aiming within or outside of the deadzone set
-            if (Vector3.Distance(hit.point, playerObj.transform.position) > cameraMoveDeadzoneRange) Gizmos.color = Color.green; 
-            else Gizmos.color = Color.red;
+            Debug.LogWarning("There is no object assigned in the: Placed Cursor variable OR the placed particles array is empty\nwithin the inspector. Please assign it and try again");
+            return;
         }
+        else
+        {
+            placedCursor.transform.position = hit.point;
+        }
+    }
 
-        //This will draw a wire sphere in the scene view around the players feet that shows if the players mouse is in the proper place 
-        Gizmos.DrawWireSphere(playerObj.transform.position - Vector3.up, cameraMoveDeadzoneRange);
+
+    //This will be called to remove the placed cursor once hte player is on top of it,
+    //Not removing it from the scene, but just moving it to an object pool to save on loading
+    private void removePlacedCursor()
+    {
+        //Adding a coding failsafe
+        if (placedCursor == null)
+        {
+            Debug.LogWarning("There is no object assigned in the: Placed Cursor variable OR the placed particles array is empty\nwithin the inspector. Please assign it and try again");
+            return;
+        }
+        else
+        {
+            placedCursor.transform.position = Vector3.one * 100;
+        }
     }
 }
