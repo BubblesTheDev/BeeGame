@@ -128,3 +128,7 @@ Footer navigation
 /Temp/workerlic
 *.json
 *.asset
+Assets/URPAsset.asset.meta
+Assets/URPAsset.asset.meta
+Assets/Render Pipeline Stuff/UniversalRenderPipelineGlobalSettings.asset.meta
+Assets/Materials/dayLightOff.mat.meta
