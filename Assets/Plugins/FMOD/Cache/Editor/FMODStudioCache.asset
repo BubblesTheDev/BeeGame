@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: 2003628956
     Data4: -1460030225
   Banks:
-  - {fileID: 2895368468899950612}
+  - {fileID: 950676962494040277}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -27,26 +27,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1596
---- !u!114 &-2401358190711155084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMODProjects/BeeGame/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638252902008454601
-  FileSizes:
-  - Name: Desktop
-    Value: 864
-  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,19 +40,37 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -2401358190711155084}
-  - {fileID: 2895368468899950612}
+  - {fileID: 8490773376188294818}
+  - {fileID: 950676962494040277}
   EditorEvents:
   - {fileID: 6742199790033450917}
   - {fileID: -8700734648726775372}
   - {fileID: 996794832983878208}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 2895368468899950612}
+  - {fileID: 950676962494040277}
   StringsBanks:
-  - {fileID: -2401358190711155084}
-  cacheTime: 638252902008454601
+  - {fileID: 8490773376188294818}
+  cacheTime: 638252990847474819
   cacheVersion: 131603
+--- !u!114 &950676962494040277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.bank
+  Name: Desktop/Master
+  StudioPath: bank:/Master
+  lastModified: 638252990847449524
+  FileSizes: []
+  Exists: 1
 --- !u!114 &996794832983878208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,7 +90,7 @@ MonoBehaviour:
     Data3: 198805678
     Data4: 1228170112
   Banks:
-  - {fileID: 2895368468899950612}
+  - {fileID: 950676962494040277}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -100,26 +98,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 71000
---- !u!114 &2895368468899950612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMODProjects/BeeGame/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638252902008444563
-  FileSizes:
-  - Name: Desktop
-    Value: 1022400
-  Exists: 1
 --- !u!114 &6742199790033450917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +117,7 @@ MonoBehaviour:
     Data3: -455568476
     Data4: 1328446052
   Banks:
-  - {fileID: 2895368468899950612}
+  - {fileID: 950676962494040277}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -147,3 +125,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
+--- !u!114 &8490773376188294818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.strings.bank
+  Name: Desktop/Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638252990847474819
+  FileSizes:
+  - Name: 
+    Value: 864
+  Exists: 1
