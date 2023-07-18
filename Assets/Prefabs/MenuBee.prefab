@@ -96,11 +96,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1249633398
-      Data2: 1271648264
-      Data3: -1717525374
-      Data4: -1609018702
-    Path: event:/Sound_Bee_Buzz
+      Data1: -1351838950
+      Data2: 1308993337
+      Data3: -455568476
+      Data4: 1328446052
+    Path: event:/MainMenuBeeBuzz
   Event: 
   PlayEvent: 1
   StopEvent: 0
@@ -110,7 +110,7 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 2.8
+  OverrideMinDistance: 1
   OverrideMaxDistance: 20
 --- !u!1 &4425361495676331962
 GameObject:

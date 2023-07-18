@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
+
 
 public class PlayButton : MonoBehaviour
 {   
@@ -37,7 +39,8 @@ public class PlayButton : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+            StartCoroutine(PlayStartSound());
+           
         }
     }
 
@@ -59,5 +62,12 @@ public class PlayButton : MonoBehaviour
     private void OnMouseExit()
     {
         mouseOver = false;
+    }
+    IEnumerator PlayStartSound()
+    {
+        RuntimeManager.PlayOneShot("event:/GameStart");
+        yield return new WaitForSeconds(1.6f);
+        Debug.Log("changinScenes");
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     }
 }

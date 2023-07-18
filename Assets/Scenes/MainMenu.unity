@@ -469,6 +469,7 @@ GameObject:
   - component: {fileID: 150727412}
   - component: {fileID: 150727413}
   - component: {fileID: 150727414}
+  - component: {fileID: 150727415}
   m_Layer: 0
   m_Name: MenuCam
   m_TagString: MainCamera
@@ -586,6 +587,19 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &150727415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150727411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 812277570}
 --- !u!1001 &168270002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1121,12 +1135,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812277570}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 0}
+  attenuationObject: {fileID: 812277570}
 --- !u!4 &812277572
 Transform:
   m_ObjectHideFlags: 0
@@ -2069,6 +2083,7 @@ GameObject:
   - component: {fileID: 7783642029510179345}
   - component: {fileID: 9203870079681583634}
   - component: {fileID: 9203870079681583635}
+  - component: {fileID: 9203870079681583636}
   m_Layer: 6
   m_Name: Button
   m_TagString: Untagged
@@ -2403,3 +2418,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Greybox
+--- !u!114 &9203870079681583636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2490194675803259388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1882495832
+      Data2: 1259774616
+      Data3: 198805678
+      Data4: 1228170112
+    Path: event:/MainMenuMusic
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
