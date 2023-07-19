@@ -27,6 +27,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1596
+--- !u!114 &-5700491240367695679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MovementBuzz
+  m_EditorClassIdentifier: 
+  Path: event:/MovementBuzz
+  Guid:
+    Data1: -1721978698
+    Data2: 1137432728
+    Data3: 1390379432
+    Data4: 1438426164
+  Banks:
+  - {fileID: -1974221534464246230}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3291
+--- !u!114 &-2255517348088291425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/idleBuzz
+  m_EditorClassIdentifier: 
+  Path: event:/idleBuzz
+  Guid:
+    Data1: 846073897
+    Data2: 1226090676
+    Data3: -1772683868
+    Data4: -1456108696
+  Banks:
+  - {fileID: -1974221534464246230}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7340
 --- !u!114 &-1974221534464246230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,7 +96,7 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638253010081737340
+  lastModified: 638253647797660153
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -64,12 +118,14 @@ MonoBehaviour:
   - {fileID: 6742199790033450917}
   - {fileID: -8700734648726775372}
   - {fileID: 996794832983878208}
+  - {fileID: -2255517348088291425}
+  - {fileID: -5700491240367695679}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1974221534464246230}
   StringsBanks:
   - {fileID: 2458188761586082679}
-  cacheTime: 638253010081757369
+  cacheTime: 638253647797675286
   cacheVersion: 131603
 --- !u!114 &996794832983878208
 MonoBehaviour:
@@ -113,10 +169,10 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638253010081757369
+  lastModified: 638253647797675286
   FileSizes:
   - Name: 
-    Value: 864
+    Value: 958
   Exists: 1
 --- !u!114 &6742199790033450917
 MonoBehaviour:

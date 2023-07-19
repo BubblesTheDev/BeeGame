@@ -5,6 +5,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Timeline;
+using FMODUnity;
+using FMOD.Studio;
 
 public class beeMovement : MonoBehaviour
 {
@@ -20,10 +22,21 @@ public class beeMovement : MonoBehaviour
     private RaycastHit hit;
     private Ray mouseAimRay;
 
+    EventInstance movementBuzz;
+    EventInstance idleBuzz;
+    bool isIdling = true;
+    bool soundPlayed = false;
+
     private void Awake()
     {
         mainCam = Camera.main;
         agent = GetComponent<NavMeshAgent>();
+
+        //set fmod event instances and start idle sound
+        movementBuzz = RuntimeManager.CreateInstance("event:/MovementBuzz");
+        idleBuzz = RuntimeManager.CreateInstance("event:/idleBuzz");
+        idleBuzz.start();
+        movementBuzz.start();
     }
 
     private void Update()
@@ -50,12 +63,25 @@ public class beeMovement : MonoBehaviour
         {
             findPath();
             placeMovementCursor();
+
+            //Start Movement Sound
+            isIdling = false;
+
         }
 
         if (Vector3.Distance(gameObject.transform.position, agent.destination) < distanceToMoveCursor)
         {
+            Debug.Log("Reached Destination");
             removePlacedCursor();
+
+            //Start idle sound
+            isIdling = true;
+            
+            
         }
+
+        setBuzzAudio();
+
 
     }
 
@@ -99,6 +125,26 @@ public class beeMovement : MonoBehaviour
         else
         {
             placedCursor.transform.position = Vector3.one * 100;
+        }
+    }
+    private void setBuzzAudio()
+    {
+        if (!soundPlayed)
+        {
+            
+            if (!isIdling)
+            {
+                movementBuzz.setPaused(false);
+                idleBuzz.setPaused(true);
+                
+            }
+            else
+            {
+
+                movementBuzz.setPaused(true);
+                idleBuzz.setPaused(false);
+
+            }
         }
     }
 }
