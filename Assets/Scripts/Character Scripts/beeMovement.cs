@@ -71,7 +71,7 @@ public class beeMovement : MonoBehaviour
 
         if (Vector3.Distance(gameObject.transform.position, agent.destination) < distanceToMoveCursor)
         {
-            Debug.Log("Reached Destination");
+            //Debug.Log("Reached Destination");
             removePlacedCursor();
 
             //Start idle sound
@@ -92,6 +92,7 @@ public class beeMovement : MonoBehaviour
         if (hit.point != null)
         {
             agent.SetDestination(hit.point);
+
         }
     }
 
