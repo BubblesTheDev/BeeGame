@@ -5,8 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Timeline;
-using FMODUnity;
-using FMOD.Studio;
+
 
 public class beeMovement : MonoBehaviour
 {
@@ -22,21 +21,15 @@ public class beeMovement : MonoBehaviour
     private RaycastHit hit;
     private Ray mouseAimRay;
 
-    EventInstance movementBuzz;
-    EventInstance idleBuzz;
-    bool isIdling = true;
-    bool soundPlayed = false;
+    BeeAudioManager audioManager;
 
     private void Awake()
     {
         mainCam = Camera.main;
         agent = GetComponent<NavMeshAgent>();
+        audioManager = GetComponent<BeeAudioManager>();
+        
 
-        //set fmod event instances and start idle sound
-        movementBuzz = RuntimeManager.CreateInstance("event:/MovementBuzz");
-        idleBuzz = RuntimeManager.CreateInstance("event:/idleBuzz");
-        idleBuzz.start();
-        movementBuzz.start();
     }
 
     private void Update()
@@ -65,7 +58,8 @@ public class beeMovement : MonoBehaviour
             placeMovementCursor();
 
             //Start Movement Sound
-            isIdling = false;
+            audioManager.SetBeeAudio(1);
+            
 
         }
 
@@ -75,12 +69,12 @@ public class beeMovement : MonoBehaviour
             removePlacedCursor();
 
             //Start idle sound
-            isIdling = true;
-            
-            
+            audioManager.SetBeeAudio(0);
+
+
         }
 
-        setBuzzAudio();
+        
 
 
     }
@@ -126,26 +120,6 @@ public class beeMovement : MonoBehaviour
         else
         {
             placedCursor.transform.position = Vector3.one * 100;
-        }
-    }
-    private void setBuzzAudio()
-    {
-        if (!soundPlayed)
-        {
-            
-            if (!isIdling)
-            {
-                movementBuzz.setPaused(false);
-                idleBuzz.setPaused(true);
-                
-            }
-            else
-            {
-
-                movementBuzz.setPaused(true);
-                idleBuzz.setPaused(false);
-
-            }
         }
     }
 }

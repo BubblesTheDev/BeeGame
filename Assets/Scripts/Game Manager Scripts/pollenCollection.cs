@@ -22,10 +22,13 @@ public class pollenCollection : MonoBehaviour
     [SerializeField] private bool isCollecting;
     private float timer;
 
+    BeeAudioManager audioManager;
+
     private void Awake()
     {
         flowers = GameObject.FindGameObjectsWithTag("Flower").ToList();
         agent = GetComponent<NavMeshAgent>();
+        audioManager = GetComponent<BeeAudioManager>();
     }
 
     private void Update()
@@ -33,7 +36,11 @@ public class pollenCollection : MonoBehaviour
         foreach  (GameObject flower in flowers)
         {
             //detects if a flower is close enough to the player to collect pollen from it, if so do it
-            if (Vector3.Distance(flower.transform.position, transform.position) <= rangeToDetectFlower && !isCollecting) StartCoroutine(collectPollen(flower));
+            if (Vector3.Distance(flower.transform.position, transform.position) <= rangeToDetectFlower && !isCollecting)
+            {
+                StartCoroutine(collectPollen(flower));
+                audioManager.SetBeeAudio(2);
+            }
         }
     }
 
