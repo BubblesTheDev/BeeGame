@@ -35,8 +35,8 @@ public class BeeAudioManager : MonoBehaviour
         switch (beeState)
         {
             case 0:
-                movementBuzz.setPaused(false);
-                idleBuzz.setPaused(true);
+                movementBuzz.setPaused(true);
+                idleBuzz.setPaused(false);
                 Debug.Log("Idling");
                 break;
 

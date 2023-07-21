@@ -33,15 +33,15 @@ public class pollenCollection : MonoBehaviour
 
     private void Update()
     {
-        foreach  (GameObject flower in flowers)
+        foreach (GameObject flower in flowers)
         {
             //detects if a flower is close enough to the player to collect pollen from it, if so do it
-            if (Vector3.Distance(flower.transform.position, transform.position) <= rangeToDetectFlower && !isCollecting)
-            {
-                StartCoroutine(collectPollen(flower));
-                audioManager.SetBeeAudio(2);
-            }
-        }
+            if (Vector3.Distance(flower.transform.position, transform.position) <= rangeToDetectFlower && !isCollecting) StartCoroutine(collectPollen(flower));
+
+
+
+        }     
+        if (isCollecting) audioManager.SetBeeAudio(2);
     }
 
     public IEnumerator collectPollen(GameObject flower)
