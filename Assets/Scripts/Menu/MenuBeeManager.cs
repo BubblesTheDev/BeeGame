@@ -56,27 +56,39 @@ public class MenuBeeManager : MonoBehaviour
         _bh.index = beeSpawnInScene.Count;
         beeSpawnInScene.Add(newBee);
     }
-
+    /*
     public void PlayButtonSwarm()
     {
-        for(int i = 0; i < 5; i++)
+        if(playSwarmBees.Count != 0)
         {
-            //GameObject newBee = Instantiate(beePrefab, spawnPoints[Random.Range(0, spawnPoints.Count)].transform.position, transform.rotation);
-            GameObject newBee = Instantiate(beePrefab, spawnPoints[i].transform.position, transform.rotation);
-            BeeHavior _bh = newBee.GetComponent<BeeHavior>();
+            for(int e = 0; e < playSwarmBees.Count; e++)
+            {
+                playSwarmBees.RemoveAt(e);
+            }
+        }
 
-            _bh.playButtonBee = true;
-            _bh.flowerPoint = playButtonPoints[i];
-            _bh.exitPoint = exitPoints[Random.Range(0, exitPoints.Count)];
-            _bh._mbm = this;
+        for (int i = 0; i < 5; i++)
+        {
+                GameObject newBee = Instantiate(beePrefab, spawnPoints[i].transform.position, transform.rotation);
+                BeeHavior _bh = newBee.GetComponent<BeeHavior>();
 
-            _bh.index = i;
-            playSwarmBees.Add(newBee);
+                _bh.playButtonBee = true;
+                _bh.flowerPoint = playButtonPoints[i];
+                _bh.exitPoint = spawnPoints[i];
+                _bh._mbm = this;
+
+                _bh.index = i;
+                playSwarmBees.Add(newBee);
+            print("bruh");
         }
     }
 
     public void StopPlayButtonSwarm()
     {
-
+        for (int i = 0; i < 5; i++)
+        {
+            playSwarmBees[i].GetComponent<BeeHavior>().TurnToExit();
+        }
     }
+    */
 }

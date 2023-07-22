@@ -29,10 +29,13 @@ public class BeeHavior : MonoBehaviour
         {
             speed = Random.Range(2f, 6f);
             Invoke("GlitchFix", 20);
+            
         }
         else
         {
-            speed = 5f;
+            speed = 6f;
+            this.gameObject.layer = 12;
+            this.transform.GetChild(0).transform.GetChild(0).gameObject.layer = 12;
         }
 
         transform.LookAt(flowerPoint);
@@ -47,6 +50,11 @@ public class BeeHavior : MonoBehaviour
         distanceFromFlower = Vector3.Distance(transform.position, flowerPoint.position);
         distanceFromExit = Vector3.Distance(transform.position, exitPoint.position);
 
+        if (distanceFromExit > 30 && playButtonBee)
+        {
+            ExitAndRespawn();
+        }
+  
         if (distanceFromFlower <= 0.05f && distanceFromFlower >= -0.05f && !leaving && moving)
         {
             moving = false;
@@ -108,6 +116,7 @@ public class BeeHavior : MonoBehaviour
                     _mbm.beeSpawnInScene.RemoveAt(i);
                 }
             }
+            _mbm.BeeSpawn();
         }
         else
         {
@@ -119,9 +128,7 @@ public class BeeHavior : MonoBehaviour
                 }
             }
         }
-        
 
-        _mbm.BeeSpawn();
         Destroy(this.gameObject);
     }
 

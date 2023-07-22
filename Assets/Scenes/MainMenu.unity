@@ -1633,8 +1633,8 @@ Transform:
   m_Children:
   - {fileID: 802639861}
   - {fileID: 911880320}
-  - {fileID: 150727412}
   - {fileID: 1355217153}
+  - {fileID: 150727412}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: -45, z: 0}
@@ -1656,8 +1656,8 @@ MonoBehaviour:
   m_CameraType: 0
   m_Cameras:
   - {fileID: 911880322}
-  - {fileID: 1355217156}
   - {fileID: 150727413}
+  - {fileID: 1355217156}
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
