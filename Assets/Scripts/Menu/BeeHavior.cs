@@ -13,6 +13,7 @@ public class BeeHavior : MonoBehaviour
     public float speed;
     public int index;
 
+    public bool playButtonBee;
     private bool moving;
     private bool leaving;
     private float distanceFromFlower;
@@ -23,15 +24,21 @@ public class BeeHavior : MonoBehaviour
     {
         _rb = this.gameObject.GetComponent<Rigidbody>();
         _an = this.transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Animator>();
-        
-        speed = Random.Range(2f, 6f);
+
+        if (!playButtonBee)
+        {
+            speed = Random.Range(2f, 6f);
+            Invoke("GlitchFix", 20);
+        }
+        else
+        {
+            speed = 5f;
+        }
 
         transform.LookAt(flowerPoint);
 
         moving = true;
         leaving = false;
-
-        Invoke("GlitchFix", 20);
     }
 
     // Update is called once per frame
@@ -44,7 +51,11 @@ public class BeeHavior : MonoBehaviour
         {
             moving = false;
             Invoke("RotateToFlower", 0.2f);
-            Invoke("TurnToExit", 1);
+
+            if (!playButtonBee)
+            {
+                Invoke("TurnToExit", 1);
+            }
         }
 
         if (leaving && distanceFromExit <= 0.05f && distanceFromExit >= -0.05f)
@@ -66,7 +77,11 @@ public class BeeHavior : MonoBehaviour
 
     public void RotateToFlower()
     {
-        flowerPoint.parent.gameObject.GetComponent<FlowerAnimation>().RussleFlower();
+        if (!playButtonBee)
+        {
+            flowerPoint.parent.gameObject.GetComponent<FlowerAnimation>().RussleFlower();
+        }
+
         transform.rotation = flowerPoint.rotation;
     }
 
@@ -76,18 +91,35 @@ public class BeeHavior : MonoBehaviour
         leaving = true;
         moving = true;
 
-        Invoke("GlitchFix", 20);
+        if (!playButtonBee)
+        {
+            Invoke("GlitchFix", 20);
+        }
     }
 
     public void ExitAndRespawn()
     {
-        for (int i = 0; i < _mbm.beeSpawnInScene.Count; i++)
+        if (!playButtonBee)
         {
-            if (_mbm.beeSpawnInScene[i] == this.gameObject)
+            for (int i = 0; i < _mbm.beeSpawnInScene.Count; i++)
             {
-                _mbm.beeSpawnInScene.RemoveAt(i);
+                if (_mbm.beeSpawnInScene[i] == this.gameObject)
+                {
+                    _mbm.beeSpawnInScene.RemoveAt(i);
+                }
             }
         }
+        else
+        {
+            for (int i = 0; i < _mbm.playSwarmBees.Count; i++)
+            {
+                if (_mbm.playSwarmBees[i] == this.gameObject)
+                {
+                    _mbm.playSwarmBees.RemoveAt(i);
+                }
+            }
+        }
+        
 
         _mbm.BeeSpawn();
         Destroy(this.gameObject);

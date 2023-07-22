@@ -5,13 +5,15 @@ using UnityEngine.UI;
 
 public class HiveWaypoint : MonoBehaviour
 {
-    public Image img;
-    public Transform hive;
+    private Image img;
+
+    public Transform hiveTransform;
+    public Camera cam;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        img = transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -23,16 +25,16 @@ public class HiveWaypoint : MonoBehaviour
         float minY = img.GetPixelAdjustedRect().height / 2;
         float maxY = Screen.height - minY;
 
-        Vector2 pos = Camera.main.WorldToScreenPoint(new Vector3(hive.position.x, hive.position.y + 1.8f, hive.position.z));
+        Vector2 pos = Camera.main.WorldToScreenPoint(new Vector3(hiveTransform.position.x, hiveTransform.position.y + 1.8f, hiveTransform.position.z));
 
         pos.x = Mathf.Clamp(pos.x, minX, maxX);
         pos.y = Mathf.Clamp(pos.y, minY, maxY);
 
         img.transform.position = pos;
-        /*
-        Vector3 diff = hive.position - img.transform.position;
+        
+        Vector3 diff = cam.WorldToScreenPoint(hiveTransform.position) - img.transform.position;
         float angle = Mathf.Atan2(diff.y, diff.x);
         img.transform.rotation = Quaternion.Euler(0f,0f, angle * Mathf.Rad2Deg);
-        */
+        
     }
 }

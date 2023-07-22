@@ -9,13 +9,16 @@ public class PlayButton : MonoBehaviour
 {   
     private Material playMaterial;
     private Color originalColor;
+    private MenuBeeManager _mbm;
 
     public string sceneName;
     private bool mouseOver;
+    private bool swarmable;
 
     // Start is called before the first frame update
     void Start()
     {
+        _mbm = GameObject.Find("BeeManager!!!!!!").GetComponent<MenuBeeManager>();
         playMaterial = GetComponent<MeshRenderer>().materials[0];
         originalColor = playMaterial.color;
     }
@@ -42,11 +45,23 @@ public class PlayButton : MonoBehaviour
             StartCoroutine(PlayStartSound());
            
         }
+
+        if (swarmable)
+        {
+            swarmable = false;
+            _mbm.PlayButtonSwarm();
+        }
     }
 
     public void TurnPlayButtonOff()
     {
         playMaterial.color = originalColor;
+
+        if (!swarmable)
+        {
+            swarmable = true;
+            _mbm.StopPlayButtonSwarm();
+        }
     }
 
     private void OnMouseEnter()
