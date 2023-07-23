@@ -11,14 +11,16 @@ public class BeeAudioManager : MonoBehaviour
     
     EventInstance movementBuzz;
     EventInstance idleBuzz;
-    
-    
+
+    EventInstance pollenCollectingSFX;
+
     // Start is called before the first frame update
-    
+
     private void Awake()
     {
         movementBuzz = RuntimeManager.CreateInstance("event:/MovementBuzz");
         idleBuzz = RuntimeManager.CreateInstance("event:/idleBuzz");
+        pollenCollectingSFX = RuntimeManager.CreateInstance("event:/pollencollecting");
         idleBuzz.start();
         movementBuzz.start();
         SetBeeAudio(0);
@@ -54,5 +56,22 @@ public class BeeAudioManager : MonoBehaviour
 
 
         }
+    }
+    public void PlayCollectionSounds()
+    {
+        if (PlaybackState(pollenCollectingSFX) != PLAYBACK_STATE.PLAYING)
+        {
+            pollenCollectingSFX.start();
+        }
+    }
+    FMOD.Studio.PLAYBACK_STATE PlaybackState(FMOD.Studio.EventInstance instance)
+    {
+        FMOD.Studio.PLAYBACK_STATE pS;
+        instance.getPlaybackState(out pS);
+        return pS;
+    }
+    public void StopCollectionSounds()
+    {
+        pollenCollectingSFX.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }

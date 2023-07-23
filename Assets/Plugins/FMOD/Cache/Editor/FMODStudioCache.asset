@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1596
+--- !u!114 &-6397769911657638772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pollencollect
+  m_EditorClassIdentifier: 
+  Path: event:/pollencollect
+  Guid:
+    Data1: -98207993
+    Data2: 1100827991
+    Data3: 1628974241
+    Data4: 489907055
+  Banks:
+  - {fileID: -1974221534464246230}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5700491240367695679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,7 +123,7 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638255505306735331
+  lastModified: 638257126092450823
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -120,12 +147,15 @@ MonoBehaviour:
   - {fileID: 996794832983878208}
   - {fileID: -2255517348088291425}
   - {fileID: -5700491240367695679}
+  - {fileID: -6397769911657638772}
+  - {fileID: 5853633259982758854}
+  - {fileID: 4115758269885933402}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1974221534464246230}
   StringsBanks:
   - {fileID: 2458188761586082679}
-  cacheTime: 638255505306745328
+  cacheTime: 638257126092465837
   cacheVersion: 131603
 --- !u!114 &996794832983878208
 MonoBehaviour:
@@ -169,11 +199,65 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638255505306745328
+  lastModified: 638257126092465837
   FileSizes:
   - Name: 
-    Value: 958
+    Value: 1094
   Exists: 1
+--- !u!114 &4115758269885933402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pollencollecting
+  m_EditorClassIdentifier: 
+  Path: event:/pollencollecting
+  Guid:
+    Data1: 622896059
+    Data2: 1169794999
+    Data3: 847926166
+    Data4: -302485159
+  Banks:
+  - {fileID: -1974221534464246230}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
+--- !u!114 &5853633259982758854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Movementinput
+  m_EditorClassIdentifier: 
+  Path: event:/Movementinput
+  Guid:
+    Data1: -1653955152
+    Data2: 1186638316
+    Data3: -1879817287
+    Data4: -859925562
+  Banks:
+  - {fileID: -1974221534464246230}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6742199790033450917
 MonoBehaviour:
   m_ObjectHideFlags: 0
