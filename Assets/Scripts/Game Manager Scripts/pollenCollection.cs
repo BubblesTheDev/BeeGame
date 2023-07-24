@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 using FMODUnity;
+using UnityEngine.SceneManagement;
 
 
 public class pollenCollection : MonoBehaviour
@@ -23,6 +24,8 @@ public class pollenCollection : MonoBehaviour
     public int pollenCollected;
     [SerializeField] private bool isCollecting;
     private float timer;
+
+    public DynamicLighting DL;
 
     BeeAudioManager audioManager;
     
@@ -56,6 +59,13 @@ public class pollenCollection : MonoBehaviour
         {
             audioManager.StopCollectionSounds();
         }
+
+
+        if (pollenCollected == 12)
+        {
+            SceneManager.LoadScene("PlayableDemo");
+        }
+
         
     }
 
@@ -102,5 +112,10 @@ public class pollenCollection : MonoBehaviour
         collectionTimer.fillAmount = 0;
         isCollecting = false;
         agent.speed = 10;
+
+        //Starts the lighting cycle
+        DL.cdBool = true;
+
+
     }
 }
