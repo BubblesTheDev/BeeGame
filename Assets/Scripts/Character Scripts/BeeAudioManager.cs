@@ -1,5 +1,6 @@
 using FMOD.Studio;
 using FMODUnity;
+using FMODUnityResonance;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -14,6 +15,8 @@ public class BeeAudioManager : MonoBehaviour
 
     EventInstance pollenCollectingSFX;
 
+    bool audioResumed = false;
+    private bool isCollecting = false;
     // Start is called before the first frame update
 
     private void Awake()
@@ -37,20 +40,31 @@ public class BeeAudioManager : MonoBehaviour
         switch (beeState)
         {
             case 0:
-                movementBuzz.setPaused(true);
-                idleBuzz.setPaused(false);
-                Debug.Log("Idling");
+                if(PlaybackState(idleBuzz)  != PLAYBACK_STATE.PLAYING && !isCollecting)
+                {
+                    idleBuzz.start();
+                    Debug.Log("Idling");
+                }
+                movementBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                
+                
                 break;
 
             case 1:
-                movementBuzz.setPaused(false);
-                idleBuzz.setPaused(true);
+                if (PlaybackState(movementBuzz) != PLAYBACK_STATE.PLAYING)
+                {
+                    movementBuzz.start();
+                }
+                
+                idleBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                ResumeAudio();
                 Debug.Log("Moving");
                 break;
 
             case 2:
-                movementBuzz.setPaused(true);
-                idleBuzz.setPaused(true);
+
+                movementBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                idleBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 Debug.Log("Collecting");
                 break;
 
@@ -62,6 +76,7 @@ public class BeeAudioManager : MonoBehaviour
         if (PlaybackState(pollenCollectingSFX) != PLAYBACK_STATE.PLAYING)
         {
             pollenCollectingSFX.start();
+            isCollecting = true;
         }
     }
     FMOD.Studio.PLAYBACK_STATE PlaybackState(FMOD.Studio.EventInstance instance)
@@ -73,5 +88,19 @@ public class BeeAudioManager : MonoBehaviour
     public void StopCollectionSounds()
     {
         pollenCollectingSFX.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        isCollecting = false;
+    }
+   
+
+    public void ResumeAudio()
+    {
+        if (!audioResumed)
+        {
+            var result = FMODUnity.RuntimeManager.CoreSystem.mixerSuspend();
+            Debug.Log(result);
+            result = FMODUnity.RuntimeManager.CoreSystem.mixerResume();
+            Debug.Log(result);
+            audioResumed = true;
+        }
     }
 }
