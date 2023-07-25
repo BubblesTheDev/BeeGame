@@ -37,19 +37,19 @@ public class BeeAudioManager : MonoBehaviour
             case 0:
                 movementBuzz.setPaused(true);
                 idleBuzz.setPaused(false);
-                Debug.Log("Idling");
+                //Debug.Log("Idling");
                 break;
 
             case 1:
                 movementBuzz.setPaused(false);
                 idleBuzz.setPaused(true);
-                Debug.Log("Moving");
+                //Debug.Log("Moving");
                 break;
 
             case 2:
                 movementBuzz.setPaused(true);
                 idleBuzz.setPaused(true);
-                Debug.Log("Collecting");
+                //Debug.Log("Collecting");
                 break;
 
 
