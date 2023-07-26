@@ -43,7 +43,7 @@ public class BeeAudioManager : MonoBehaviour
                 if(PlaybackState(idleBuzz)  != PLAYBACK_STATE.PLAYING && !isCollecting)
                 {
                     idleBuzz.start();
-                    Debug.Log("Idling");
+                    //Debug.Log("Idling");
                 }
                 movementBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 
@@ -58,14 +58,14 @@ public class BeeAudioManager : MonoBehaviour
                 
                 idleBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 ResumeAudio();
-                Debug.Log("Moving");
+                //Debug.Log("Moving");
                 break;
 
             case 2:
 
                 movementBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 idleBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-                Debug.Log("Collecting");
+                //Debug.Log("Collecting");
                 break;
 
 
@@ -97,9 +97,9 @@ public class BeeAudioManager : MonoBehaviour
         if (!audioResumed)
         {
             var result = FMODUnity.RuntimeManager.CoreSystem.mixerSuspend();
-            Debug.Log(result);
+            //Debug.Log(result);
             result = FMODUnity.RuntimeManager.CoreSystem.mixerResume();
-            Debug.Log(result);
+            //Debug.Log(result);
             audioResumed = true;
         }
     }

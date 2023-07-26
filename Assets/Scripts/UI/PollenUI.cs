@@ -10,7 +10,9 @@ public class PollenUI : MonoBehaviour
     private GameObject pHalf;
     private GameObject pFull;
 
+    public float pollenCollectionAnimationTime;
     private int initialFlowerCount;
+    private int previousAmount;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,7 @@ public class PollenUI : MonoBehaviour
         pFull.SetActive(false);
 
         initialFlowerCount = flowerGrouping.transform.childCount;
+        previousAmount = initialFlowerCount;
     }
 
     // Update is called once per frame
@@ -45,6 +48,12 @@ public class PollenUI : MonoBehaviour
             }
         }
 
+        if(previousAmount > currentFlowerCount)
+        {
+            previousAmount = currentFlowerCount;
+            StartCoroutine(PollenIconAnimationStart(pollenCollectionAnimationTime));
+        }
+
         if(currentFlowerCount <= 0)
         {
             pHalf.SetActive(false);
@@ -55,6 +64,11 @@ public class PollenUI : MonoBehaviour
             pHalf.SetActive(true);
             pEmpty.SetActive(false);
         }
+    }
+
+    public IEnumerator PollenIconAnimationStart(float time)
+    {
+        yield return new WaitForSeconds(time);
     }
 
 }

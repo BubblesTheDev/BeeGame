@@ -146,7 +146,7 @@ public class DynamicLighting : MonoBehaviour
 
 
 
-        Debug.Log(Sun.transform.rotation.y);
+        //Debug.Log(Sun.transform.rotation.y);
 
     }
 }
