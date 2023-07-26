@@ -5,6 +5,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
+using FMODUnity;
+using UnityEngine.SceneManagement;
+
 
 public class pollenCollection : MonoBehaviour
 {
@@ -22,13 +25,17 @@ public class pollenCollection : MonoBehaviour
     [SerializeField] private bool isCollecting;
     private float timer;
 
+    public DynamicLighting DL;
+
     BeeAudioManager audioManager;
+    
 
     private void Awake()
     {
         flowers = GameObject.FindGameObjectsWithTag("Flower").ToList();
         agent = GetComponent<NavMeshAgent>();
         audioManager = GetComponent<BeeAudioManager>();
+        
     }
 
     private void Update()
@@ -40,8 +47,26 @@ public class pollenCollection : MonoBehaviour
 
 
 
-        }     
-        if (isCollecting) audioManager.SetBeeAudio(2);
+        }
+        if (isCollecting)
+        {
+            //stop bee movementsounds
+            audioManager.SetBeeAudio(2);
+            //start collection sound
+            audioManager.PlayCollectionSounds();
+        }
+        else
+        {
+            audioManager.StopCollectionSounds();
+        }
+
+
+        if (pollenCollected == 12)
+        {
+            SceneManager.LoadScene("PlayableDemo");
+        }
+
+        
     }
 
     public IEnumerator collectPollen(GameObject flower)
@@ -81,11 +106,16 @@ public class pollenCollection : MonoBehaviour
         pollenCollected++;
         flower.SetActive(false);
         flowers.Remove(flower);
-
+        RuntimeManager.PlayOneShot("event:/pollencollect");
         //Just some final statistic changes to set everything back to normal
         timer = 0;
         collectionTimer.fillAmount = 0;
         isCollecting = false;
         agent.speed = 10;
+
+        //Starts the lighting cycle
+        DL.cdBool = true;
+
+
     }
 }

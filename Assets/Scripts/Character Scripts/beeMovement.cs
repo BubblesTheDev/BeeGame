@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Timeline;
+using FMODUnity;
 
 
 public class beeMovement : MonoBehaviour
@@ -59,7 +60,7 @@ public class beeMovement : MonoBehaviour
 
             //Start Movement Sound
             audioManager.SetBeeAudio(1);
-            
+            RuntimeManager.PlayOneShot("event:/Movementinput");
 
         }
 

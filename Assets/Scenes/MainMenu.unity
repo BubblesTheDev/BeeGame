@@ -2760,7 +2760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c842dfc969485f47b1430999775af48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Greybox
+  sceneName: PlayableDemo
 --- !u!114 &9203870079681583636
 MonoBehaviour:
   m_ObjectHideFlags: 0

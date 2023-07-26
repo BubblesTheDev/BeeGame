@@ -9,22 +9,22 @@ public class DynamicLighting : MonoBehaviour
     public float rotationSpeed = 10;
     float cdTimer;
     public float cdDuration;
-    bool cdBool = false;
+    public bool cdBool = false;
     int pollenCount = 0;
     public bool nightTime = false;
     public GameObject nL;
 
-    public Color camTargetColor;
+    private Color camTargetColor;
     public Color camSunsetColor;
     public Color camNightColor;
-    public Color camCurrentColor;
+    private Color camCurrentColor;
     float transitionDuration;
     bool stopCol = false;
 
-    public Color sunTargetColor;
+    private Color sunTargetColor;
     public Color sunSunsetColor;
     public Color sunNightColor;
-    public Color sunCurrentColor;
+    private Color sunCurrentColor;
 
     private Camera mainCamera;
     private Color camInitialColor;
@@ -36,6 +36,7 @@ public class DynamicLighting : MonoBehaviour
     public Material nightMat;
 
     public bool collectDebug;
+    public pollenCollection pc;
 
 
     // Start is called before the first frame update
@@ -65,15 +66,9 @@ public class DynamicLighting : MonoBehaviour
     void Update()
     {
 
-        transitionDuration = 70 / rotationSpeed;
+        pollenCount = pc.pollenCollected;
 
-
-        if (collectDebug == true)
-        {
-            cdBool = true;
-            pollenCount += 1;
-            collectDebug = false;
-        }
+        transitionDuration = 50 / rotationSpeed;
 
         if (cdBool == true)
         {
