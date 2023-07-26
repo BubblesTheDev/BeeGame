@@ -30,11 +30,11 @@ public class HiveWaypoint : MonoBehaviour
         pos.x = Mathf.Clamp(pos.x, minX, maxX);
         pos.y = Mathf.Clamp(pos.y, minY, maxY);
 
-        img.transform.position = pos;
+        img.transform.parent.position = pos;
         
         Vector3 diff = cam.WorldToScreenPoint(hiveTransform.position) - img.transform.position;
         float angle = Mathf.Atan2(diff.y, diff.x);
-        img.transform.rotation = Quaternion.Euler(0f,0f, angle * Mathf.Rad2Deg);
+        img.transform.parent.rotation = Quaternion.Euler(0f,0f, angle * Mathf.Rad2Deg);
         
     }
 }
