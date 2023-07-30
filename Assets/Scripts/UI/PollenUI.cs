@@ -6,38 +6,22 @@ public class PollenUI : MonoBehaviour
 {
 
     public GameObject flowerGrouping;
-    private GameObject pEmpty; //these are all placeholders and are subject to change
-    private GameObject pHalf;
-    private GameObject pFull;
+    private GameObject pollenImgGrouping;
+    public List<GameObject> pollenImgs;
 
     public float pollenCollectionAnimationTime;
     private int initialFlowerCount;
-    private int previousAmount;
-
-    private enum PollenUIState
-    {
-        empty,
-        half,
-        full
-    }
-
-    private PollenUIState state;
+    private int initialImgCount;
 
     // Start is called before the first frame update
     void Start()
     {
-        Transform thing = this.transform.GetChild(0).transform.GetChild(1).transform;
-        state = PollenUIState.empty;
+        pollenImgGrouping = this.transform.GetChild(0).transform.GetChild(1).transform.GetChild(2).gameObject;
 
-        pEmpty = thing.GetChild(2).gameObject;
-        pHalf = thing.GetChild(3).gameObject;
-        pFull = thing.GetChild(4).gameObject;
-
-        pHalf.SetActive(false);
-        pFull.SetActive(false);
-
-        initialFlowerCount = flowerGrouping.transform.childCount;
-        previousAmount = initialFlowerCount;
+        for(int i = 0; i < pollenImgGrouping.transform.childCount; i++)
+        {
+            pollenImgs.Add(pollenImgGrouping.transform.GetChild(i).gameObject);
+        }
     }
 
     // Update is called once per frame
@@ -45,9 +29,23 @@ public class PollenUI : MonoBehaviour
     {
         CheckFlowerCount();
     }
-
+    
     public void CheckFlowerCount()
     {
+        int currentFlowerCount = 0;
+
+        for (int i = 0; i < flowerGrouping.transform.childCount; i++)
+        {
+            if (flowerGrouping.transform.GetChild(i).gameObject.activeSelf)
+            {
+                currentFlowerCount++;
+            }
+        }
+
+        print(currentFlowerCount);
+     
+
+        /*
         int currentFlowerCount = 0;
         
         for (int i = 0; i < flowerGrouping.transform.childCount; i++)
@@ -76,11 +74,13 @@ public class PollenUI : MonoBehaviour
             pEmpty.SetActive(false);
             state = PollenUIState.half;
         }
+        */
     }
 
     public IEnumerator PollenIconAnimationStart(float time)
     {
         yield return new WaitForSeconds(time);
+        /*
         Animator bruh = null;
         if (state == PollenUIState.empty)
         {
@@ -99,7 +99,8 @@ public class PollenUI : MonoBehaviour
 
         yield return new WaitForSeconds(0.12f);
         
-        bruh.SetBool("Bumping", false);
+        bruh.SetBool("Bumping", false);*/
     }
+    
 
 }
