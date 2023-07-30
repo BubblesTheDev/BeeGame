@@ -4,24 +4,31 @@ using UnityEngine;
 
 public class PollenUI : MonoBehaviour
 {
-
     public GameObject flowerGrouping;
-    private GameObject pollenImgGrouping;
+    public RuntimeAnimatorController animControl;
     public List<GameObject> pollenImgs;
+    private GameObject pollenImgGrouping;
+    private Animator _an;
 
     public float pollenCollectionAnimationTime;
     private int initialFlowerCount;
-    private int initialImgCount;
+    private int prevImageIndex;
+    private int prevFlowerCount;
 
     // Start is called before the first frame update
     void Start()
     {
+        prevImageIndex = 100000;
+        prevFlowerCount = flowerGrouping.transform.childCount;
+
         pollenImgGrouping = this.transform.GetChild(0).transform.GetChild(1).transform.GetChild(2).gameObject;
 
         for(int i = 0; i < pollenImgGrouping.transform.childCount; i++)
         {
             pollenImgs.Add(pollenImgGrouping.transform.GetChild(i).gameObject);
         }
+
+        initialFlowerCount = flowerGrouping.transform.childCount;
     }
 
     // Update is called once per frame
@@ -42,64 +49,50 @@ public class PollenUI : MonoBehaviour
             }
         }
 
-        print(currentFlowerCount);
-     
+        float flowerPercentLeft = ((float)currentFlowerCount / (float)initialFlowerCount) * 100;
 
-        /*
-        int currentFlowerCount = 0;
-        
-        for (int i = 0; i < flowerGrouping.transform.childCount; i++)
+        float currentPollenUIIndex = Mathf.Round((flowerPercentLeft * (float)pollenImgs.Count) / 100);
+
+        if(currentPollenUIIndex != prevImageIndex)
         {
-            if (flowerGrouping.transform.GetChild(i).gameObject.activeSelf)
+            ChangeFlowerUIImg((int)currentPollenUIIndex);
+        }
+
+        if (currentFlowerCount != prevFlowerCount)
+        {
+            prevFlowerCount = currentFlowerCount;
+            StartCoroutine(PollenIconAnimationStart(pollenCollectionAnimationTime));
+        }
+    }
+
+    public void ChangeFlowerUIImg(int index)
+    {
+        prevImageIndex = index;
+
+        for(int i = 0; i < pollenImgs.Count; i++)
+        {
+            if (pollenImgs[i].activeSelf)
             {
-                currentFlowerCount++;
+                pollenImgs[i].SetActive(false);
             }
         }
 
-        if(previousAmount > currentFlowerCount)
-        {
-            previousAmount = currentFlowerCount;
-            StartCoroutine(PollenIconAnimationStart(pollenCollectionAnimationTime));
-        }
+        pollenImgs[index - 1].SetActive(true);
 
-        if(currentFlowerCount <= 0)
-        {
-            pHalf.SetActive(false);
-            pFull.SetActive(true);
-            state = PollenUIState.full;
-        }
-        else if (currentFlowerCount <= initialFlowerCount / 2)
-        {
-            pHalf.SetActive(true);
-            pEmpty.SetActive(false);
-            state = PollenUIState.half;
-        }
-        */
+        Destroy(_an);
+        _an = pollenImgs[index - 1].AddComponent<Animator>();
+        _an.runtimeAnimatorController = animControl;
     }
 
     public IEnumerator PollenIconAnimationStart(float time)
     {
         yield return new WaitForSeconds(time);
-        /*
-        Animator bruh = null;
-        if (state == PollenUIState.empty)
-        {
-            bruh = pEmpty.GetComponent<Animator>();
-        }
-        else if (state == PollenUIState.half)
-        {
-            bruh = pHalf.GetComponent<Animator>();
-        }
-        else if (state == PollenUIState.full)
-        {
-            bruh = pFull.GetComponent<Animator>();
-        }
 
-        bruh.SetBool("Bumping", true);
+        _an.SetBool("Bumping", true);
 
-        yield return new WaitForSeconds(0.12f);
-        
-        bruh.SetBool("Bumping", false);*/
+        yield return new WaitForSeconds(0.3f);
+
+        _an.SetBool("Bumping", false);
     }
     
 
