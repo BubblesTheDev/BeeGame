@@ -10,6 +10,7 @@ public class PollenUI : MonoBehaviour
     private GameObject pollenImgGrouping;
     private Animator _an;
 
+    public int dailyPollenQuota;
     public float pollenCollectionAnimationTime;
     private int initialFlowerCount;
     private int prevImageIndex;
@@ -49,9 +50,11 @@ public class PollenUI : MonoBehaviour
             }
         }
 
-        float flowerPercentLeft = ((float)currentFlowerCount / (float)initialFlowerCount) * 100;
+        float amountOfFlowersGotten = (float)initialFlowerCount - (float)currentFlowerCount;
+        
+        float flowerPercentGotten = ((float)amountOfFlowersGotten / (float)dailyPollenQuota) * 100;
 
-        float currentPollenUIIndex = Mathf.Round((flowerPercentLeft * (float)pollenImgs.Count) / 100);
+        float currentPollenUIIndex = Mathf.Round((flowerPercentGotten * (float)pollenImgs.Count) / 100);
 
         if(currentPollenUIIndex != prevImageIndex)
         {
@@ -76,8 +79,15 @@ public class PollenUI : MonoBehaviour
                 pollenImgs[i].SetActive(false);
             }
         }
+        
+        print(index);
 
-        pollenImgs[index - 1].SetActive(true);
+        if(index <= 0)
+        {
+            index = 1;
+        }
+
+        pollenImgs[index-1].SetActive(true);
 
         Destroy(_an);
         _an = pollenImgs[index - 1].AddComponent<Animator>();

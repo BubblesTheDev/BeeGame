@@ -1076,17 +1076,17 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5605645267458025666}
-  - {fileID: 7707500110326983924}
-  - {fileID: 8931988761639530805}
-  - {fileID: 3756030990946852166}
-  - {fileID: 5385289206323121909}
-  - {fileID: 7168139544491586533}
-  - {fileID: 5841602162313110004}
-  - {fileID: 7094827595540733179}
-  - {fileID: 3865206921391460112}
-  - {fileID: 5291239844185096828}
   - {fileID: 7434753103797856624}
+  - {fileID: 5291239844185096828}
+  - {fileID: 3865206921391460112}
+  - {fileID: 7094827595540733179}
+  - {fileID: 5841602162313110004}
+  - {fileID: 7168139544491586533}
+  - {fileID: 5385289206323121909}
+  - {fileID: 3756030990946852166}
+  - {fileID: 8931988761639530805}
+  - {fileID: 7707500110326983924}
+  - {fileID: 5605645267458025666}
   m_Father: {fileID: 3004903353480871292}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1128,7 +1128,7 @@ Transform:
   m_Children:
   - {fileID: 3247601466660402422}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &483925838526473699
 MonoBehaviour:
@@ -1159,6 +1159,7 @@ MonoBehaviour:
   flowerGrouping: {fileID: 0}
   animControl: {fileID: 9100000, guid: 5f115b9708193244ea6d23abdfb8e6a7, type: 2}
   pollenImgs: []
+  dailyPollenQuota: 0
   pollenCollectionAnimationTime: 0
 --- !u!114 &693318366611699055
 MonoBehaviour:
