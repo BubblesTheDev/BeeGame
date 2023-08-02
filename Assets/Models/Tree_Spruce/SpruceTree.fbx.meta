@@ -13,17 +13,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SpruceTreeBranch
-    second: {fileID: 2100000, guid: 293842bdd499d20419e68bd51330c77d, type: 2}
+    second: {fileID: 2100000, guid: 71c98a8a3266c1141aee71f0cbe44d34, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SpuceTreeBranchMed
-    second: {fileID: 2100000, guid: 09b1913c40d63bd42adf0db17d374666, type: 2}
+    second: {fileID: 2100000, guid: 1a0e87b4940d68249b661110a901f556, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SpuceTreeBranchSmall
-    second: {fileID: 2100000, guid: 8e200715d330159499b0b1f4fb24f401, type: 2}
+    second: {fileID: 2100000, guid: e185c28a47f559c41a5f0625ba2909ba, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
