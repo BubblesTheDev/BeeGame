@@ -885,7 +885,6 @@ GameObject:
   - component: {fileID: 8931988761639530805}
   - component: {fileID: 66280191758005315}
   - component: {fileID: 7506262491738327646}
-  - component: {fileID: 4115524627648806868}
   m_Layer: 5
   m_Name: PollenCollection (8)
   m_TagString: Untagged
@@ -951,27 +950,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &4115524627648806868
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4906646773309348487}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5f115b9708193244ea6d23abdfb8e6a7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5413318326931612896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,7 +1137,7 @@ MonoBehaviour:
   flowerGrouping: {fileID: 0}
   animControl: {fileID: 9100000, guid: 5f115b9708193244ea6d23abdfb8e6a7, type: 2}
   pollenImgs: []
-  dailyPollenQuota: 0
+  dailyPollenQuota: 2
   pollenCollectionAnimationTime: 0
 --- !u!114 &693318366611699055
 MonoBehaviour:
