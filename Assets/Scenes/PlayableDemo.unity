@@ -26033,6 +26033,69 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468289522}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &470418107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 470418108}
+  - component: {fileID: 470418109}
+  m_Layer: 0
+  m_Name: WildernessAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &470418108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470418107}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.35, y: 0.72, z: 12.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4979614389034888191}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &470418109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470418107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -142451609
+      Data2: 1122573297
+      Data3: 1806333375
+      Data4: -203890444
+    Path: event:/amb_wilderness
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 130
 --- !u!1 &470535842
 GameObject:
   m_ObjectHideFlags: 0
@@ -41585,6 +41648,11 @@ Transform:
   m_Father: {fileID: 1545745909}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &706699168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a816030b433260847bf42df1dfd257e1, type: 3}
+  m_PrefabInstance: {fileID: 1224555790}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &707050806
 GameObject:
   m_ObjectHideFlags: 0
@@ -77538,7 +77606,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a816030b433260847bf42df1dfd257e1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1572106953}
   m_SourcePrefab: {fileID: 100100000, guid: a816030b433260847bf42df1dfd257e1, type: 3}
 --- !u!1 &1226541707
 GameObject:
@@ -96358,6 +96429,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a816030b433260847bf42df1dfd257e1, type: 3}
   m_PrefabInstance: {fileID: 1224555790}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1572106953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706699168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2060166850
+      Data2: 1089674360
+      Data3: -1741809477
+      Data4: 1983625053
+    Path: event:/amb_beehive
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 5
 --- !u!1 &1573760834
 GameObject:
   m_ObjectHideFlags: 0
@@ -135618,6 +135720,7 @@ Transform:
   - {fileID: 64066984270178749}
   - {fileID: 1654992585692216900}
   - {fileID: 1847890050}
+  - {fileID: 470418108}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
