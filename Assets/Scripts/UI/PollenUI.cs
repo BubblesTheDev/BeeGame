@@ -15,6 +15,7 @@ public class PollenUI : MonoBehaviour
     private int initialFlowerCount;
     private int prevImageIndex;
     private int prevFlowerCount;
+    private float currentPollenUIIndex;
 
     // Start is called before the first frame update
     void Start()
@@ -54,9 +55,9 @@ public class PollenUI : MonoBehaviour
         
         float flowerPercentGotten = ((float)amountOfFlowersGotten / (float)dailyPollenQuota) * 100;
 
-        float currentPollenUIIndex = Mathf.Round((flowerPercentGotten * (float)pollenImgs.Count) / 100);
+        currentPollenUIIndex = Mathf.Round((flowerPercentGotten * (float)pollenImgs.Count) / 100);
 
-        if(currentPollenUIIndex != prevImageIndex)
+        if (currentPollenUIIndex != prevImageIndex && currentPollenUIIndex < 11)
         {
             ChangeFlowerUIImg((int)currentPollenUIIndex);
         }
@@ -65,6 +66,7 @@ public class PollenUI : MonoBehaviour
         {
             prevFlowerCount = currentFlowerCount;
             StartCoroutine(PollenIconAnimationStart(pollenCollectionAnimationTime));
+            print("bruh");
         }
     }
 
@@ -79,30 +81,40 @@ public class PollenUI : MonoBehaviour
                 pollenImgs[i].SetActive(false);
             }
         }
-        
-        print(index);
 
-        if(index <= 0)
-        {
-            index = 1;
-        }
-
-        pollenImgs[index-1].SetActive(true);
+        pollenImgs[index].SetActive(true);
 
         Destroy(_an);
-        _an = pollenImgs[index - 1].AddComponent<Animator>();
+        _an = pollenImgs[index].AddComponent<Animator>();
         _an.runtimeAnimatorController = animControl;
+
+
     }
 
     public IEnumerator PollenIconAnimationStart(float time)
     {
         yield return new WaitForSeconds(time);
 
-        _an.SetBool("Bumping", true);
+        if(currentPollenUIIndex < 10)
+        {
+            _an.SetBool("Bumping", true);
 
-        yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.3f);
 
-        _an.SetBool("Bumping", false);
+            _an.SetBool("Bumping", false);
+        }
+        else if(currentPollenUIIndex >= 10)
+        {
+            _an.SetBool("Full", true);
+
+            yield return new WaitForSeconds(0.3f);
+
+            _an.SetBool("Full", false);
+        }
+        
+
+
+
     }
     
 

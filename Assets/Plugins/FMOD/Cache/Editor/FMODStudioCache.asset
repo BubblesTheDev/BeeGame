@@ -204,7 +204,11 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< Updated upstream
   lastModified: 638266152650311547
+=======
+  lastModified: 638265890998122616
+>>>>>>> Stashed changes
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -239,7 +243,11 @@ MonoBehaviour:
   - {fileID: -1974221534464246230}
   StringsBanks:
   - {fileID: 2458188761586082679}
+<<<<<<< Updated upstream
   cacheTime: 638266152650431658
+=======
+  cacheTime: 638265890998132610
+>>>>>>> Stashed changes
   cacheVersion: 131603
 --- !u!114 &326333278423993423
 MonoBehaviour:
@@ -310,7 +318,11 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< Updated upstream
   lastModified: 638266152650431658
+=======
+  lastModified: 638265890998132610
+>>>>>>> Stashed changes
   FileSizes:
   - Name: 
     Value: 1282
