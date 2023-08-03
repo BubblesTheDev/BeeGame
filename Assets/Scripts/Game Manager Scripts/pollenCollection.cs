@@ -25,7 +25,14 @@ public class pollenCollection : MonoBehaviour
     [SerializeField] private bool isCollecting;
     private float timer;
 
+    //for lighting
     public DynamicLighting DL;
+    //to finish day
+    public GameObject hive;
+    //set pollen quota for the day
+    public int pollenQuota;
+    //to switch animation for the pointer
+    public Animator pointer;
 
     BeeAudioManager audioManager;
     
@@ -35,6 +42,7 @@ public class pollenCollection : MonoBehaviour
         flowers = GameObject.FindGameObjectsWithTag("Flower").ToList();
         agent = GetComponent<NavMeshAgent>();
         audioManager = GetComponent<BeeAudioManager>();
+
         
     }
 
@@ -60,8 +68,14 @@ public class pollenCollection : MonoBehaviour
             audioManager.StopCollectionSounds();
         }
 
+        //Starts bump animation of pointer if the player fulfills their quota
+        if (pollenCollected >= pollenQuota)
+        {
+            pointer.SetBool("isFinished", true);
+        }
 
-        if (pollenCollected == 12)
+        //Detects if player is close to hive after collecting the pollen quota then resets the scene 
+        if (Vector3.Distance(hive.transform.position, transform.position) <= rangeToDetectFlower*4 && pollenCollected >= pollenQuota)
         {
             SceneManager.LoadScene("PlayableDemo");
         }
