@@ -52,6 +52,7 @@ public class UIButtonFunctionality : MonoBehaviour
 
     public void PressedPlay()
     {
+        RuntimeManager.PlayOneShot("event:/sfx_menuselect");
         pauseScreen.SetActive(false);
         beeMove.enabled = true;
         NavMeshAgent nma = beeMove.gameObject.GetComponent<NavMeshAgent>();
@@ -62,6 +63,7 @@ public class UIButtonFunctionality : MonoBehaviour
 
     public void PressedPause()
     {
+        RuntimeManager.PlayOneShot("event:/sfx_menuselect");
         pauseScreen.SetActive(true);
         beeMove.enabled = false;
         NavMeshAgent nma = beeMove.gameObject.GetComponent<NavMeshAgent>();
@@ -71,7 +73,8 @@ public class UIButtonFunctionality : MonoBehaviour
 
     public void PressedMute()
     {
-        
+        RuntimeManager.PlayOneShot("event:/sfx_menuselect");
+
         masterBus.getVolume(out float volume);
         if (volume == 1) {
             masterBus.setVolume(0);
@@ -81,4 +84,5 @@ public class UIButtonFunctionality : MonoBehaviour
             masterBus.setVolume(1);
         }
     }
+    
 }
