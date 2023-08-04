@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8700734648726775372
+--- !u!114 &-7594614027211889480
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,160 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/GameStart
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: event:/GameStart
-  Guid:
-    Data1: -587311709
-    Data2: 1131719062
-    Data3: 2003628956
-    Data4: -1460030225
-  Banks:
-  - {fileID: -1974221534464246230}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1596
---- !u!114 &-5818572058101422420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/amb_beehive
-  m_EditorClassIdentifier: 
-  Path: event:/amb_beehive
-  Guid:
-    Data1: 2060166850
-    Data2: 1089674360
-    Data3: -1741809477
-    Data4: 1983625053
-  Banks:
-  - {fileID: -1974221534464246230}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1.8000001
-  MaxDistance: 15
-  Length: 33000
---- !u!114 &-5746146058121010816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/pollencollect
-  m_EditorClassIdentifier: 
-  Path: event:/pollencollect
-  Guid:
-    Data1: -98207993
-    Data2: 1100827991
-    Data3: 1628974241
-    Data4: 489907055
-  Banks:
-  - {fileID: -1974221534464246230}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-5700491240367695679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MovementBuzz
-  m_EditorClassIdentifier: 
-  Path: event:/MovementBuzz
-  Guid:
-    Data1: -1721978698
-    Data2: 1137432728
-    Data3: 1390379432
-    Data4: 1438426164
-  Banks:
-  - {fileID: -1974221534464246230}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3291
---- !u!114 &-4157573297524549220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/amb_wilderness
-  m_EditorClassIdentifier: 
-  Path: event:/amb_wilderness
-  Guid:
-    Data1: -142451609
-    Data2: 1122573297
-    Data3: 1806333375
-    Data4: -203890444
-  Banks:
-  - {fileID: -1974221534464246230}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 135000
---- !u!114 &-3075191012622569517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/amb_construction
-  m_EditorClassIdentifier: 
-  Path: event:/amb_construction
-  Guid:
-    Data1: -1091239968
-    Data2: 1115730934
-    Data3: 193222802
-    Data4: 1326201995
-  Banks:
-  - {fileID: -1974221534464246230}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 181921
---- !u!114 &-2255517348088291425
+  Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638267444586580588
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5470187715426925007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -181,7 +37,7 @@ MonoBehaviour:
     Data3: -1772683868
     Data4: -1456108696
   Banks:
-  - {fileID: -1974221534464246230}
+  - {fileID: -7594614027211889480}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -189,7 +45,88 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7340
---- !u!114 &-1974221534464246230
+--- !u!114 &-5081519784426078299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb_wilderness
+  m_EditorClassIdentifier: 
+  Path: event:/amb_wilderness
+  Guid:
+    Data1: -142451609
+    Data2: 1122573297
+    Data3: 1806333375
+    Data4: -203890444
+  Banks:
+  - {fileID: -7594614027211889480}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 135000
+--- !u!114 &-2281717312710977737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MovementBuzz
+  m_EditorClassIdentifier: 
+  Path: event:/MovementBuzz
+  Guid:
+    Data1: -1721978698
+    Data2: 1137432728
+    Data3: 1390379432
+    Data4: 1438426164
+  Banks:
+  - {fileID: -7594614027211889480}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3291
+--- !u!114 &-1746318658431747722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx_menuselect
+  m_EditorClassIdentifier: 
+  Path: event:/sfx_menuselect
+  Guid:
+    Data1: 1714486194
+    Data2: 1158323831
+    Data3: -1675554916
+    Data4: 1910198329
+  Banks:
+  - {fileID: -7594614027211889480}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1136907583319507154
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,17 +136,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-<<<<<<< Updated upstream
-  lastModified: 638266152650311547
-=======
-  lastModified: 638265890998122616
->>>>>>> Stashed changes
-  FileSizes: []
+  Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638267444586595726
+  FileSizes:
+  - Name: 
+    Value: 1362
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -224,59 +159,30 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 2458188761586082679}
-  - {fileID: -1974221534464246230}
+  - {fileID: -1136907583319507154}
+  - {fileID: -7594614027211889480}
   EditorEvents:
-  - {fileID: 6742199790033450917}
-  - {fileID: -8700734648726775372}
-  - {fileID: 996794832983878208}
-  - {fileID: -2255517348088291425}
-  - {fileID: -5700491240367695679}
-  - {fileID: -5746146058121010816}
-  - {fileID: 7326553257181502774}
-  - {fileID: 326333278423993423}
-  - {fileID: -5818572058101422420}
-  - {fileID: -3075191012622569517}
-  - {fileID: -4157573297524549220}
+  - {fileID: 7785066439101640060}
+  - {fileID: 8622728147286000244}
+  - {fileID: -5470187715426925007}
+  - {fileID: -5081519784426078299}
+  - {fileID: 2648280436142362210}
+  - {fileID: 243948505686148329}
+  - {fileID: 5500170788913223034}
+  - {fileID: -2281717312710977737}
+  - {fileID: 3598101996231981226}
+  - {fileID: 4776410731344300865}
+  - {fileID: 270253184853588781}
+  - {fileID: 9056433125189675601}
+  - {fileID: -1746318658431747722}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -1974221534464246230}
+  - {fileID: -7594614027211889480}
   StringsBanks:
-  - {fileID: 2458188761586082679}
-<<<<<<< Updated upstream
-  cacheTime: 638266152650431658
-=======
-  cacheTime: 638265890998132610
->>>>>>> Stashed changes
+  - {fileID: -1136907583319507154}
+  cacheTime: 638267444586595726
   cacheVersion: 131603
---- !u!114 &326333278423993423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/pollencollecting
-  m_EditorClassIdentifier: 
-  Path: event:/pollencollecting
-  Guid:
-    Data1: 622896059
-    Data2: 1169794999
-    Data3: 847926166
-    Data4: -302485159
-  Banks:
-  - {fileID: -1974221534464246230}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3000
---- !u!114 &996794832983878208
+--- !u!114 &243948505686148329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -295,7 +201,7 @@ MonoBehaviour:
     Data3: 198805678
     Data4: 1228170112
   Banks:
-  - {fileID: -1974221534464246230}
+  - {fileID: -7594614027211889480}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -303,31 +209,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 71000
---- !u!114 &2458188761586082679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-<<<<<<< Updated upstream
-  lastModified: 638266152650431658
-=======
-  lastModified: 638265890998132610
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: 
-    Value: 1282
-  Exists: 1
---- !u!114 &6742199790033450917
+--- !u!114 &270253184853588781
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -337,24 +219,105 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MainMenuBeeBuzz
+  m_Name: event:/amb_construction
   m_EditorClassIdentifier: 
-  Path: event:/MainMenuBeeBuzz
+  Path: event:/amb_construction
   Guid:
-    Data1: -1351838950
-    Data2: 1308993337
-    Data3: -455568476
-    Data4: 1328446052
+    Data1: -1091239968
+    Data2: 1115730934
+    Data3: 193222802
+    Data4: 1326201995
   Banks:
-  - {fileID: -1974221534464246230}
-  IsStream: 0
+  - {fileID: -7594614027211889480}
+  IsStream: 1
   Is3D: 1
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4000
---- !u!114 &7326553257181502774
+  Length: 181921
+--- !u!114 &2648280436142362210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameStart
+  m_EditorClassIdentifier: 
+  Path: event:/GameStart
+  Guid:
+    Data1: -587311709
+    Data2: 1131719062
+    Data3: 2003628956
+    Data4: -1460030225
+  Banks:
+  - {fileID: -7594614027211889480}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1596
+--- !u!114 &3598101996231981226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pollencollecting
+  m_EditorClassIdentifier: 
+  Path: event:/pollencollecting
+  Guid:
+    Data1: 622896059
+    Data2: 1169794999
+    Data3: 847926166
+    Data4: -302485159
+  Banks:
+  - {fileID: -7594614027211889480}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
+--- !u!114 &4776410731344300865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb_beehive
+  m_EditorClassIdentifier: 
+  Path: event:/amb_beehive
+  Guid:
+    Data1: 2060166850
+    Data2: 1089674360
+    Data3: -1741809477
+    Data4: 1983625053
+  Banks:
+  - {fileID: -7594614027211889480}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 15
+  Length: 33000
+--- !u!114 &5500170788913223034
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -373,7 +336,7 @@ MonoBehaviour:
     Data3: -1879817287
     Data4: -859925562
   Banks:
-  - {fileID: -1974221534464246230}
+  - {fileID: -7594614027211889480}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -381,3 +344,84 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7785066439101640060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pollencollect
+  m_EditorClassIdentifier: 
+  Path: event:/pollencollect
+  Guid:
+    Data1: -98207993
+    Data2: 1100827991
+    Data3: 1628974241
+    Data4: 489907055
+  Banks:
+  - {fileID: -7594614027211889480}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8622728147286000244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MainMenuBeeBuzz
+  m_EditorClassIdentifier: 
+  Path: event:/MainMenuBeeBuzz
+  Guid:
+    Data1: -1351838950
+    Data2: 1308993337
+    Data3: -455568476
+    Data4: 1328446052
+  Banks:
+  - {fileID: -7594614027211889480}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &9056433125189675601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb_pond
+  m_EditorClassIdentifier: 
+  Path: event:/amb_pond
+  Guid:
+    Data1: -255037386
+    Data2: 1222141116
+    Data3: -285104197
+    Data4: 1160099097
+  Banks:
+  - {fileID: -7594614027211889480}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 164000
