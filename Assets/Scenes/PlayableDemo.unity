@@ -63159,6 +63159,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1572106952}
     - target: {fileID: 693318366611699055, guid: e091509367f9a5d47ad330f013c412b5, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 4251047370277051656}
+    - target: {fileID: 693318366611699055, guid: e091509367f9a5d47ad330f013c412b5, type: 3}
       propertyPath: beeMove
       value: 
       objectReference: {fileID: 2970209417726794100}
