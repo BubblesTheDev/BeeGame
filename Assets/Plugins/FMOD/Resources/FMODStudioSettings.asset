@@ -224,13 +224,13 @@ MonoBehaviour:
       Value: 0
       HasValue: 0
     Overlay:
-      Value: 0
+      Value: 1
       HasValue: 1
     Logging:
       Value: 0
       HasValue: 0
     SampleRate:
-      Value: 48000
+      Value: 44100
       HasValue: 1
     BuildDirectory:
       Value: 

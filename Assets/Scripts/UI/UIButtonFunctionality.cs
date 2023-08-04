@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.AI;
+using FMODUnity;
+using FMOD.Studio;
 
 public class UIButtonFunctionality : MonoBehaviour
 {
@@ -12,7 +14,7 @@ public class UIButtonFunctionality : MonoBehaviour
 
     public beeMovement beeMove;
 
-
+    private Bus masterBus;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,8 @@ public class UIButtonFunctionality : MonoBehaviour
         muteButton = thing.GetChild(1).gameObject.GetComponent<Button>();
 
         pauseScreen.SetActive(false);
+
+        masterBus = RuntimeManager.GetBus("bus:/");
     }
 
     public void HoveredPause()
@@ -67,6 +71,14 @@ public class UIButtonFunctionality : MonoBehaviour
 
     public void PressedMute()
     {
-        print("bruh");
+        
+        masterBus.getVolume(out float volume);
+        if (volume == 1) {
+            masterBus.setVolume(0);
+        }
+        if (volume == 0)
+        {
+            masterBus.setVolume(1);
+        }
     }
 }
