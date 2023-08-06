@@ -71,7 +71,7 @@ public class pollenCollection : MonoBehaviour
         //Starts bump animation of pointer if the player fulfills their quota
         if (pollenCollected >= pollenQuota)
         {
-            pointer.SetBool("isFinished", true);
+            pointer.SetBool("isFinished", true);+
         }
 
         //Detects if player is close to hive after collecting the pollen quota then resets the scene 

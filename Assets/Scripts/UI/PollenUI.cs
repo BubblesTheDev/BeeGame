@@ -87,8 +87,6 @@ public class PollenUI : MonoBehaviour
         Destroy(_an);
         _an = pollenImgs[index].AddComponent<Animator>();
         _an.runtimeAnimatorController = animControl;
-
-
     }
 
     public IEnumerator PollenIconAnimationStart(float time)
