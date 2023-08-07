@@ -1,24 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7594614027211889480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638267462863669690
-  FileSizes: []
-  Exists: 1
---- !u!114 &-5470187715426925007
+--- !u!114 &-9097964385319939481
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28,24 +10,89 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/idleBuzz
+  m_Name: event:/amb_construction
   m_EditorClassIdentifier: 
-  Path: event:/idleBuzz
+  Path: event:/amb_construction
   Guid:
-    Data1: 846073897
-    Data2: 1226090676
-    Data3: -1772683868
-    Data4: -1456108696
+    Data1: -1091239968
+    Data2: 1115730934
+    Data3: 193222802
+    Data4: 1326201995
   Banks:
-  - {fileID: -7594614027211889480}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
+  - {fileID: 1447282341641574076}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 7340
---- !u!114 &-5081519784426078299
+  Length: 181921
+--- !u!114 &-8700753889067176682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameStart
+  m_EditorClassIdentifier: 
+  Path: event:/GameStart
+  Guid:
+    Data1: -587311709
+    Data2: 1131719062
+    Data3: 2003628956
+    Data4: -1460030225
+  Banks:
+  - {fileID: -2561031597705619260}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1596
+--- !u!114 &-8682705069523027465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/BeeBank.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/BeeGame/Desktop/BeeBank.bank
+  Name: Desktop/BeeBank
+  StudioPath: bank:/BeeBank
+  lastModified: 638270174253350545
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-8612524068019589695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/BeeGame/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638270184267785760
+  FileSizes:
+  - Name: 
+    Value: 1612
+  Exists: 1
+--- !u!114 &-7897336178064355630
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,7 +111,7 @@ MonoBehaviour:
     Data3: 1806333375
     Data4: -203890444
   Banks:
-  - {fileID: -7594614027211889480}
+  - {fileID: 2487726923032918885}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -72,7 +119,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 135000
---- !u!114 &-2281717312710977737
+--- !u!114 &-6344306467573552795
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,24 +129,78 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MovementBuzz
+  m_Name: event:/amb_construction
   m_EditorClassIdentifier: 
-  Path: event:/MovementBuzz
+  Path: event:/amb_construction
   Guid:
-    Data1: -1721978698
-    Data2: 1137432728
-    Data3: 1390379432
-    Data4: 1438426164
+    Data1: -1091239968
+    Data2: 1115730934
+    Data3: 193222802
+    Data4: 1326201995
   Banks:
-  - {fileID: -7594614027211889480}
-  IsStream: 0
-  Is3D: 0
+  - {fileID: -2561031597705619260}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 181921
+--- !u!114 &-6177236094693747223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb_construction
+  m_EditorClassIdentifier: 
+  Path: event:/amb_construction
+  Guid:
+    Data1: -1091239968
+    Data2: 1115730934
+    Data3: 193222802
+    Data4: 1326201995
+  Banks:
+  - {fileID: 2487726923032918885}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 181921
+--- !u!114 &-6106470731325095247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb_wilderness
+  m_EditorClassIdentifier: 
+  Path: event:/amb_wilderness
+  Guid:
+    Data1: -142451609
+    Data2: 1122573297
+    Data3: 1806333375
+    Data4: -203890444
+  Banks:
+  - {fileID: 1447282341641574076}
+  IsStream: 1
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3291
---- !u!114 &-1746318658431747722
+  Length: 135000
+--- !u!114 &-5654886610328950801
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,7 +219,7 @@ MonoBehaviour:
     Data3: -1675554916
     Data4: 1910198329
   Banks:
-  - {fileID: -7594614027211889480}
+  - {fileID: 2487726923032918885}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -126,7 +227,259 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-1136907583319507154
+--- !u!114 &-4962754088049045170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb_pond
+  m_EditorClassIdentifier: 
+  Path: event:/amb_pond
+  Guid:
+    Data1: -255037386
+    Data2: 1222141116
+    Data3: -285104197
+    Data4: 1160099097
+  Banks:
+  - {fileID: 2487726923032918885}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 164000
+--- !u!114 &-4173326752963393279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Extra Bank.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Desktop/Extra Bank.assets.bank
+  Name: Desktop/Extra Bank.assets
+  StudioPath: 
+  lastModified: 638270153176081681
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-4071767816420334777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/idleBuzz
+  m_EditorClassIdentifier: 
+  Path: event:/idleBuzz
+  Guid:
+    Data1: 846073897
+    Data2: 1226090676
+    Data3: -1772683868
+    Data4: -1456108696
+  Banks:
+  - {fileID: 9165592481368790827}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7340
+--- !u!114 &-3861378850807444057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pollencollect
+  m_EditorClassIdentifier: 
+  Path: event:/pollencollect
+  Guid:
+    Data1: -98207993
+    Data2: 1100827991
+    Data3: 1628974241
+    Data4: 489907055
+  Banks:
+  - {fileID: 2487726923032918885}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2608741292941448884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/idleBuzz
+  m_EditorClassIdentifier: 
+  Path: event:/idleBuzz
+  Guid:
+    Data1: 846073897
+    Data2: 1226090676
+    Data3: -1772683868
+    Data4: -1456108696
+  Banks:
+  - {fileID: -8682705069523027465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7340
+--- !u!114 &-2561031597705619260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/BeeGame/Desktop/Master.bank
+  Name: Desktop/Master
+  StudioPath: bank:/Master
+  lastModified: 638270174253889463
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-2042758177139941301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MovementBuzz
+  m_EditorClassIdentifier: 
+  Path: event:/MovementBuzz
+  Guid:
+    Data1: -1721978698
+    Data2: 1137432728
+    Data3: 1390379432
+    Data4: 1438426164
+  Banks:
+  - {fileID: 2487726923032918885}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3291
+--- !u!114 &-1894216959766561866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pollencollect
+  m_EditorClassIdentifier: 
+  Path: event:/pollencollect
+  Guid:
+    Data1: -98207993
+    Data2: 1100827991
+    Data3: 1628974241
+    Data4: 489907055
+  Banks:
+  - {fileID: -2561031597705619260}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1126627192748989416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pollencollect
+  m_EditorClassIdentifier: 
+  Path: event:/pollencollect
+  Guid:
+    Data1: -98207993
+    Data2: 1100827991
+    Data3: 1628974241
+    Data4: 489907055
+  Banks:
+  - {fileID: 1447282341641574076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-835639664043251130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/idleBuzz
+  m_EditorClassIdentifier: 
+  Path: event:/idleBuzz
+  Guid:
+    Data1: 846073897
+    Data2: 1226090676
+    Data3: -1772683868
+    Data4: -1456108696
+  Banks:
+  - {fileID: 2487726923032918885}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7340
+--- !u!114 &-656474880004165699
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,7 +494,7 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638267462863689725
+  lastModified: 638270133710690621
   FileSizes:
   - Name: 
     Value: 1514
@@ -159,28 +512,30 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -1136907583319507154}
-  - {fileID: -7594614027211889480}
+  - {fileID: -8612524068019589695}
+  - {fileID: 9165592481368790827}
+  - {fileID: 1447282341641574076}
+  - {fileID: 1106183258637556273}
   EditorEvents:
-  - {fileID: 7785066439101640060}
-  - {fileID: 8622728147286000244}
-  - {fileID: -5470187715426925007}
-  - {fileID: -5081519784426078299}
-  - {fileID: 2648280436142362210}
-  - {fileID: 243948505686148329}
-  - {fileID: 5500170788913223034}
-  - {fileID: -2281717312710977737}
-  - {fileID: 3598101996231981226}
-  - {fileID: 4776410731344300865}
-  - {fileID: 270253184853588781}
-  - {fileID: 9056433125189675601}
-  - {fileID: -1746318658431747722}
+  - {fileID: -4071767816420334777}
+  - {fileID: 5606332332708585388}
+  - {fileID: 7495513724653787644}
+  - {fileID: 6172054994389710684}
+  - {fileID: -1126627192748989416}
+  - {fileID: 6598974049916152189}
+  - {fileID: 6830122068713698147}
+  - {fileID: -6106470731325095247}
+  - {fileID: 2740522006662097016}
+  - {fileID: 6270552458640670197}
+  - {fileID: 2279797664130293255}
+  - {fileID: 6041540542932846083}
+  - {fileID: -9097964385319939481}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -7594614027211889480}
+  - {fileID: 1447282341641574076}
   StringsBanks:
-  - {fileID: -1136907583319507154}
-  cacheTime: 638267462863689725
+  - {fileID: -8612524068019589695}
+  cacheTime: 638270184267785760
   cacheVersion: 131603
 --- !u!114 &243948505686148329
 MonoBehaviour:
@@ -201,7 +556,7 @@ MonoBehaviour:
     Data3: 198805678
     Data4: 1228170112
   Banks:
-  - {fileID: -7594614027211889480}
+  - {fileID: 2487726923032918885}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -209,7 +564,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 71000
---- !u!114 &270253184853588781
+--- !u!114 &917624263163938226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,23 +574,185 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/amb_construction
+  m_Name: event:/amb_pond
   m_EditorClassIdentifier: 
-  Path: event:/amb_construction
+  Path: event:/amb_pond
   Guid:
-    Data1: -1091239968
-    Data2: 1115730934
-    Data3: 193222802
-    Data4: 1326201995
+    Data1: -255037386
+    Data2: 1222141116
+    Data3: -285104197
+    Data4: 1160099097
   Banks:
-  - {fileID: -7594614027211889480}
+  - {fileID: -2561031597705619260}
   IsStream: 1
   Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 164000
+--- !u!114 &1106183258637556273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/MainMenu.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/BeeGame/Desktop/MainMenu.bank
+  Name: MainMenu
+  StudioPath: bank:/MainMenu
+  lastModified: 638270178951531666
+  FileSizes: []
+  Exists: 1
+--- !u!114 &1263059040472906641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MovementBuzz
+  m_EditorClassIdentifier: 
+  Path: event:/MovementBuzz
+  Guid:
+    Data1: -1721978698
+    Data2: 1137432728
+    Data3: 1390379432
+    Data4: 1438426164
+  Banks:
+  - {fileID: -8682705069523027465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3291
+--- !u!114 &1447282341641574076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/BeeGame/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638270184267770740
+  FileSizes: []
+  Exists: 1
+--- !u!114 &1556256873727092521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb_beehive
+  m_EditorClassIdentifier: 
+  Path: event:/amb_beehive
+  Guid:
+    Data1: 2060166850
+    Data2: 1089674360
+    Data3: -1741809477
+    Data4: 1983625053
+  Banks:
+  - {fileID: -2561031597705619260}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 15
+  Length: 33000
+--- !u!114 &2279797664130293255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx_menuselect
+  m_EditorClassIdentifier: 
+  Path: event:/sfx_menuselect
+  Guid:
+    Data1: 1714486194
+    Data2: 1158323831
+    Data3: -1675554916
+    Data4: 1910198329
+  Banks:
+  - {fileID: 1447282341641574076}
+  IsStream: 0
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 181921
+  Length: 0
+--- !u!114 &2464971792325985722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb_beehive
+  m_EditorClassIdentifier: 
+  Path: event:/amb_beehive
+  Guid:
+    Data1: 2060166850
+    Data2: 1089674360
+    Data3: -1741809477
+    Data4: 1983625053
+  Banks:
+  - {fileID: 2487726923032918885}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 15
+  Length: 33000
+--- !u!114 &2487726923032918885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638270133710680611
+  FileSizes: []
+  Exists: 1
 --- !u!114 &2648280436142362210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,7 +772,7 @@ MonoBehaviour:
     Data3: 2003628956
     Data4: -1460030225
   Banks:
-  - {fileID: -7594614027211889480}
+  - {fileID: 2487726923032918885}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -263,7 +780,72 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1596
---- !u!114 &3598101996231981226
+--- !u!114 &2740522006662097016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameStart
+  m_EditorClassIdentifier: 
+  Path: event:/GameStart
+  Guid:
+    Data1: -587311709
+    Data2: 1131719062
+    Data3: 2003628956
+    Data4: -1460030225
+  Banks:
+  - {fileID: 1106183258637556273}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1596
+--- !u!114 &3061057992277402002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Extra Bank.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Desktop/Extra Bank.bank
+  Name: Desktop/Extra Bank
+  StudioPath: 
+  lastModified: 638270153175860792
+  FileSizes: []
+  Exists: 0
+--- !u!114 &3600044321447358966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/BeeGame/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638270174253909696
+  FileSizes:
+  - Name: 
+    Value: 1564
+  Exists: 1
+--- !u!114 &3693427494678130655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -282,7 +864,7 @@ MonoBehaviour:
     Data3: 847926166
     Data4: -302485159
   Banks:
-  - {fileID: -7594614027211889480}
+  - {fileID: -8682705069523027465}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -290,7 +872,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
---- !u!114 &4776410731344300865
+--- !u!114 &4116164850923379287
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,24 +882,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/amb_beehive
+  m_Name: event:/MainMenuMusic
   m_EditorClassIdentifier: 
-  Path: event:/amb_beehive
+  Path: event:/MainMenuMusic
   Guid:
-    Data1: 2060166850
-    Data2: 1089674360
-    Data3: -1741809477
-    Data4: 1983625053
+    Data1: -1882495832
+    Data2: 1259774616
+    Data3: 198805678
+    Data4: 1228170112
   Banks:
-  - {fileID: -7594614027211889480}
+  - {fileID: -2561031597705619260}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 15
-  Length: 33000
---- !u!114 &5500170788913223034
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 71000
+--- !u!114 &4144492539224356124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -336,7 +918,7 @@ MonoBehaviour:
     Data3: -1879817287
     Data4: -859925562
   Banks:
-  - {fileID: -7594614027211889480}
+  - {fileID: -8682705069523027465}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -344,7 +926,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &7785066439101640060
+--- !u!114 &5606332332708585388
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -354,16 +936,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/pollencollect
+  m_Name: event:/Movementinput
   m_EditorClassIdentifier: 
-  Path: event:/pollencollect
+  Path: event:/Movementinput
   Guid:
-    Data1: -98207993
-    Data2: 1100827991
-    Data3: 1628974241
-    Data4: 489907055
+    Data1: -1653955152
+    Data2: 1186638316
+    Data3: -1879817287
+    Data4: -859925562
   Banks:
-  - {fileID: -7594614027211889480}
+  - {fileID: 9165592481368790827}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -371,6 +953,276 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5654464828274485129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pollencollecting
+  m_EditorClassIdentifier: 
+  Path: event:/pollencollecting
+  Guid:
+    Data1: 622896059
+    Data2: 1169794999
+    Data3: 847926166
+    Data4: -302485159
+  Banks:
+  - {fileID: 2487726923032918885}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
+--- !u!114 &5919945343866998078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Movementinput
+  m_EditorClassIdentifier: 
+  Path: event:/Movementinput
+  Guid:
+    Data1: -1653955152
+    Data2: 1186638316
+    Data3: -1879817287
+    Data4: -859925562
+  Banks:
+  - {fileID: 2487726923032918885}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6041540542932846083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb_beehive
+  m_EditorClassIdentifier: 
+  Path: event:/amb_beehive
+  Guid:
+    Data1: 2060166850
+    Data2: 1089674360
+    Data3: -1741809477
+    Data4: 1983625053
+  Banks:
+  - {fileID: 1447282341641574076}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 15
+  Length: 33000
+--- !u!114 &6172054994389710684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pollencollecting
+  m_EditorClassIdentifier: 
+  Path: event:/pollencollecting
+  Guid:
+    Data1: 622896059
+    Data2: 1169794999
+    Data3: 847926166
+    Data4: -302485159
+  Banks:
+  - {fileID: 9165592481368790827}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
+--- !u!114 &6270552458640670197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MainMenuMusic
+  m_EditorClassIdentifier: 
+  Path: event:/MainMenuMusic
+  Guid:
+    Data1: -1882495832
+    Data2: 1259774616
+    Data3: 198805678
+    Data4: 1228170112
+  Banks:
+  - {fileID: 1106183258637556273}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 71000
+--- !u!114 &6289779422128605462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx_menuselect
+  m_EditorClassIdentifier: 
+  Path: event:/sfx_menuselect
+  Guid:
+    Data1: 1714486194
+    Data2: 1158323831
+    Data3: -1675554916
+    Data4: 1910198329
+  Banks:
+  - {fileID: -2561031597705619260}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6449431888793018829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb_wilderness
+  m_EditorClassIdentifier: 
+  Path: event:/amb_wilderness
+  Guid:
+    Data1: -142451609
+    Data2: 1122573297
+    Data3: 1806333375
+    Data4: -203890444
+  Banks:
+  - {fileID: -2561031597705619260}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 135000
+--- !u!114 &6598974049916152189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MainMenuBeeBuzz
+  m_EditorClassIdentifier: 
+  Path: event:/MainMenuBeeBuzz
+  Guid:
+    Data1: -1351838950
+    Data2: 1308993337
+    Data3: -455568476
+    Data4: 1328446052
+  Banks:
+  - {fileID: 1447282341641574076}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &6830122068713698147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb_pond
+  m_EditorClassIdentifier: 
+  Path: event:/amb_pond
+  Guid:
+    Data1: -255037386
+    Data2: 1222141116
+    Data3: -285104197
+    Data4: 1160099097
+  Banks:
+  - {fileID: 1447282341641574076}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 164000
+--- !u!114 &7495513724653787644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MovementBuzz
+  m_EditorClassIdentifier: 
+  Path: event:/MovementBuzz
+  Guid:
+    Data1: -1721978698
+    Data2: 1137432728
+    Data3: 1390379432
+    Data4: 1438426164
+  Banks:
+  - {fileID: 9165592481368790827}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3291
 --- !u!114 &8622728147286000244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,7 +1242,7 @@ MonoBehaviour:
     Data3: -455568476
     Data4: 1328446052
   Banks:
-  - {fileID: -7594614027211889480}
+  - {fileID: 2487726923032918885}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -398,7 +1250,25 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
---- !u!114 &9056433125189675601
+--- !u!114 &8743674932387254155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/BeeBank.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/BeeGame/Bank/Desktop/Desktop/BeeBank.assets.bank
+  Name: Desktop/BeeBank.assets
+  StudioPath: 
+  lastModified: 638270161663672634
+  FileSizes: []
+  Exists: 1
+--- !u!114 &8979840313413432033
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -408,20 +1278,38 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/amb_pond
+  m_Name: event:/MainMenuBeeBuzz
   m_EditorClassIdentifier: 
-  Path: event:/amb_pond
+  Path: event:/MainMenuBeeBuzz
   Guid:
-    Data1: -255037386
-    Data2: 1222141116
-    Data3: -285104197
-    Data4: 1160099097
+    Data1: -1351838950
+    Data2: 1308993337
+    Data3: -455568476
+    Data4: 1328446052
   Banks:
-  - {fileID: -7594614027211889480}
-  IsStream: 1
+  - {fileID: -2561031597705619260}
+  IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 164000
+  Length: 4000
+--- !u!114 &9165592481368790827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/BeeBank.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/BeeGame/Desktop/BeeBank.bank
+  Name: BeeBank
+  StudioPath: bank:/BeeBank
+  lastModified: 638270176016573798
+  FileSizes: []
+  Exists: 1

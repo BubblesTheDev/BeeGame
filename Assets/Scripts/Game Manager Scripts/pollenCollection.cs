@@ -42,8 +42,8 @@ public class pollenCollection : MonoBehaviour
         flowers = GameObject.FindGameObjectsWithTag("Flower").ToList();
         agent = GetComponent<NavMeshAgent>();
         audioManager = GetComponent<BeeAudioManager>();
-
         
+
     }
 
     private void Update()
@@ -71,7 +71,7 @@ public class pollenCollection : MonoBehaviour
         //Starts bump animation of pointer if the player fulfills their quota
         if (pollenCollected >= pollenQuota)
         {
-            pointer.SetBool("isFinished", true);+
+            pointer.SetBool("isFinished", true);
         }
 
         //Detects if player is close to hive after collecting the pollen quota then resets the scene 
@@ -81,6 +81,7 @@ public class pollenCollection : MonoBehaviour
         }
 
         
+
     }
 
     public IEnumerator collectPollen(GameObject flower)
