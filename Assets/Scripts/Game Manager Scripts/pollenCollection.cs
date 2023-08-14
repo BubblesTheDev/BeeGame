@@ -119,7 +119,8 @@ public class pollenCollection : MonoBehaviour
         //Increase the count of pollen, sets the flower to be deactivated to remove from scene (optional),
         //and removes the flower from the list of available places to collect pollen 
         pollenCollected++;
-        flower.SetActive(false);
+        //flower.SetActive(false);
+        flower.GetComponent<ParticleSystem>().Stop();
         flowers.Remove(flower);
         RuntimeManager.PlayOneShot("event:/pollencollect");
         //Just some final statistic changes to set everything back to normal
