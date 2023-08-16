@@ -535,7 +535,7 @@ MonoBehaviour:
   - {fileID: 1447282341641574076}
   StringsBanks:
   - {fileID: -8612524068019589695}
-  cacheTime: 638276246379466452
+  cacheTime: 638277916085098381
   cacheVersion: 131603
 --- !u!114 &243948505686148329
 MonoBehaviour:
@@ -1310,6 +1310,6 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Desktop/BeeBank.bank
   Name: BeeBank
   StudioPath: bank:/BeeBank
-  lastModified: 638276246379466452
+  lastModified: 638277916085098381
   FileSizes: []
   Exists: 1
