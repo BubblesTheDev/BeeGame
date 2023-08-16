@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3069293621707774920}
   - component: {fileID: 6575835066519271866}
   - component: {fileID: 8258843738615479058}
+  - component: {fileID: 7365031251929940201}
   m_Layer: 7
   m_Name: PoppyPrefab
   m_TagString: Flower
@@ -4856,6 +4857,19 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &7365031251929940201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6965599538493583171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da4f5d25a3cf6241a85e24ae2658a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particleSystem: {fileID: 6575835066519271866}
 --- !u!1001 &2230127486264518254
 PrefabInstance:
   m_ObjectHideFlags: 0

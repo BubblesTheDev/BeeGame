@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2216746517110893794}
   - component: {fileID: 5731535360493231410}
   - component: {fileID: 6732498422515935709}
+  - component: {fileID: 8103787834175708921}
   m_Layer: 7
   m_Name: Catmint Prefab
   m_TagString: Flower
@@ -32,7 +33,7 @@ Transform:
   m_Children:
   - {fileID: 8688581416692872873}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &5731535360493231410
 ParticleSystem:
@@ -4856,6 +4857,19 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &8103787834175708921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6854615675666346468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da4f5d25a3cf6241a85e24ae2658a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particleSystem: {fileID: 5731535360493231410}
 --- !u!1001 &9159956324211265858
 PrefabInstance:
   m_ObjectHideFlags: 0

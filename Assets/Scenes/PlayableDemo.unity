@@ -65598,22 +65598,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2571943608765069735
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8388657738967995521}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4299008000106447146}
-  m_Father: {fileID: 5239701866622098529}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2739513538049412612 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1967556756494939089, guid: 4c00fbdc8eb125a43a9728adc4955f06, type: 3}
@@ -65809,21 +65793,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &4299008000106447146
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5919148950764832870}
-  m_LocalRotation: {x: 0.6532931, y: -0.2705702, z: 0.2705702, w: 0.6532931}
-  m_LocalPosition: {x: 0.048, y: -0.499, z: 0.371}
-  m_LocalScale: {x: 3.4635293, y: 3.4635293, z: 3.4635293}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 2571943608765069735}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 44.995}
 --- !u!114 &4550700785866890498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65982,30 +65951,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5161489574072571954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5919148950764832870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 06bf6eda97fe58b45beeab9464f1332c, type: 2}
-  m_DrawDistance: 15
-  m_FadeScale: 1
-  m_StartAngleFade: 180
-  m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
-  m_DecalLayerMask: 1
-  m_ScaleMode: 1
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1, y: 1, z: 1}
-  m_FadeFactor: 0.38
 --- !u!4 &5239701866622098529
 Transform:
   m_ObjectHideFlags: 0
@@ -66019,7 +65964,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4939983825661539841}
-  - {fileID: 2571943608765069735}
   - {fileID: 583863567}
   - {fileID: 189329207}
   m_Father: {fileID: 4979614389034888191}
@@ -66164,23 +66108,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!1 &5919148950764832870
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4299008000106447146}
-  - component: {fileID: 5161489574072571954}
-  m_Layer: 0
-  m_Name: FloorDecal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!120 &5964986260756495130
 LineRenderer:
   serializedVersion: 2
@@ -66363,6 +66290,10 @@ PrefabInstance:
     - target: {fileID: 1967556756494939089, guid: 4c00fbdc8eb125a43a9728adc4955f06, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856772886916350217, guid: 4c00fbdc8eb125a43a9728adc4955f06, type: 3}
+      propertyPath: prewarm
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3978867606706324113, guid: 4c00fbdc8eb125a43a9728adc4955f06, type: 3}
       propertyPath: looping
@@ -66660,6 +66591,14 @@ PrefabInstance:
       propertyPath: outlineColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6396624593096208858, guid: 4c00fbdc8eb125a43a9728adc4955f06, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 5239701866622098529}
+    - target: {fileID: 6396624593096208858, guid: 4c00fbdc8eb125a43a9728adc4955f06, type: 3}
+      propertyPath: affectDistance
+      value: 1.79
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66871,22 +66810,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &8388657738967995521
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2571943608765069735}
-  m_Layer: 0
-  m_Name: Decal Holder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!33 &8671514379626181093
 MeshFilter:
   m_ObjectHideFlags: 0
