@@ -54598,6 +54598,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransparentReworkedModels
       objectReference: {fileID: 0}
+    - target: {fileID: 5934123985716981778, guid: 3162ebcf089adf24ab8998aa875e4083, type: 3}
+      propertyPath: m_Size.x
+      value: 19.962072
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934123985716981778, guid: 3162ebcf089adf24ab8998aa875e4083, type: 3}
+      propertyPath: m_Size.z
+      value: 12.886455
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934123985716981778, guid: 3162ebcf089adf24ab8998aa875e4083, type: 3}
+      propertyPath: m_Center.x
+      value: 0.014381409
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934123985716981778, guid: 3162ebcf089adf24ab8998aa875e4083, type: 3}
+      propertyPath: m_Center.z
+      value: -1.5036802
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55494,7 +55510,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903478190}
   m_LocalRotation: {x: 0.23911765, y: -0.3696438, z: 0.09904577, w: 0.89239913}
-  m_LocalPosition: {x: 27.13, y: 24.43, z: -27.13}
+  m_LocalPosition: {x: 35.93, y: 31.61, z: -35.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68848,7 +68864,7 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 4215
+    m_Bits: 4471
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_GenerateLinks: 0
