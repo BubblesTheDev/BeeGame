@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002294FA045D8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000229A4C45188 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,3 +20,61 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] SoundI::release                          : amb_wilderness (00000229A5368DE8)
+[LOG] SoundI::release                          :     amb_wilderness (0000022877979678)
+[LOG] SoundI::release                          :     amb_wilderness (0000022709E20258)
+[LOG] SoundI::release                          : amb_wilderness (000002287B882D08)
+[LOG] SoundI::release                          :     amb_wilderness (0000022877976418)
+[LOG] SoundI::release                          :     amb_wilderness (0000022709E20918)
+[LOG] SoundI::release                          : amb_wilderness (000002287B883068)
+[LOG] SoundI::release                          :     amb_wilderness (0000022877977C78)
+[LOG] SoundI::release                          :     amb_wilderness (0000022709E20408)
+[LOG] SoundI::release                          : amb_wilderness (000002287B882B58)
+[LOG] SoundI::release                          :     amb_wilderness (0000022877976A98)
+[LOG] SoundI::release                          :     amb_wilderness (0000022709E200A8)
+[LOG] SoundI::release                          : amb_wilderness (000002287B882EB8)
+[LOG] SoundI::release                          :     amb_wilderness (0000022877976278)
+[LOG] SoundI::release                          :     amb_wilderness (0000022709E20E28)
+[LOG] SoundI::release                          : amb_beehive (000002287B883218)
+[LOG] SoundI::release                          :     amb_beehive (0000022877978B18)
+[LOG] SoundI::release                          :     amb_beehive (0000022709E20768)
+[LOG] SoundI::release                          : amb_pond (000002287B8829A8)
+[LOG] SoundI::release                          :     amb_pond (0000022877975D98)
+[LOG] SoundI::release                          :     amb_pond (0000022709E20C78)
+[LOG] SoundI::release                          :  (000002295052B5B8)
+[LOG] SoundI::release                          :     sfx_pollencollect (00000228779775F8)
+[LOG] SoundI::release                          :  (000002295052B728)
+[LOG] SoundI::release                          :     Sound_Bee_Buzz (00000228779768F8)
+[LOG] SoundI::release                          :  (000002295052A028)
+[LOG] SoundI::release                          :     sfx_menuselect (0000022877979338)
+[LOG] SoundI::release                          :  (000002295052AE88)
+[LOG] SoundI::release                          :     sfx_bee_idle (000002287797AB98)
+[LOG] SoundI::release                          :  (000002295052A198)
+[LOG] SoundI::release                          :     sfx_movmentinput (0000022877978498)
+[LOG] SoundI::release                          :  (000002295052AA38)
+[LOG] SoundI::release                          :     sfx_bee_move (0000022877978978)
+[LOG] SoundI::release                          :  (0000022950529A68)
+[LOG] SoundI::release                          :     sfx_pollencollecting (000002287797BA38)
+[LOG] SoundI::release                          :  (000002295052C868)
+[LOG] SoundI::release                          :     sfx_startsound (000002287797AD38)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
