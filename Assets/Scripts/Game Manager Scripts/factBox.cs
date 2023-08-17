@@ -24,6 +24,14 @@ public class factBox : MonoBehaviour
         factDatabase = GameObject.Find("GameManager").GetComponent<dialogueDatabase>();
     }
 
+    private void Update()
+    {
+        if (hasSpawned)
+        {
+            tempObj.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+        }
+    }
+
     public void spawnBox()
     {
         hasSpawned = true;

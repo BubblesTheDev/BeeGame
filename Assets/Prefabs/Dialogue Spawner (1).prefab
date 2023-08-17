@@ -48,7 +48,7 @@ MonoBehaviour:
   factToAccessId: 1
   prerequisiteFacts: 
   factBoxPrefab: {fileID: 5237720285325576629, guid: 4419be5f96b055e4ebf0fb84226333e5, type: 3}
-  typingSpeed: 3
+  typingSpeed: 1.75
   hasSpawned: 0
 --- !u!65 &443247225038566183
 BoxCollider:
