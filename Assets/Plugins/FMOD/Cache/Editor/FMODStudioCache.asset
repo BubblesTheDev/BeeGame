@@ -87,10 +87,10 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638277929263347536
+  lastModified: 638281212372235384
   FileSizes:
   - Name: 
-    Value: 1612
+    Value: 1668
   Exists: 1
 --- !u!114 &-7897336178064355630
 MonoBehaviour:
@@ -530,12 +530,13 @@ MonoBehaviour:
   - {fileID: 2279797664130293255}
   - {fileID: 6041540542932846083}
   - {fileID: -9097964385319939481}
+  - {fileID: 5946705883926243145}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1447282341641574076}
   StringsBanks:
   - {fileID: -8612524068019589695}
-  cacheTime: 638277929263347536
+  cacheTime: 638281212372235384
   cacheVersion: 131603
 --- !u!114 &243948505686148329
 MonoBehaviour:
@@ -651,7 +652,7 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638277929263327520
+  lastModified: 638281212372215298
   FileSizes: []
   Exists: 1
 --- !u!114 &1556256873727092521
@@ -1007,6 +1008,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5946705883926243145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx_dialoguepopup
+  m_EditorClassIdentifier: 
+  Path: event:/sfx_dialoguepopup
+  Guid:
+    Data1: 359734213
+    Data2: 1318743147
+    Data3: -418059134
+    Data4: -897203750
+  Banks:
+  - {fileID: 9165592481368790827}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6041540542932846083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1310,6 +1338,6 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Desktop/BeeBank.bank
   Name: BeeBank
   StudioPath: bank:/BeeBank
-  lastModified: 638277929229821003
+  lastModified: 638281212370020649
   FileSizes: []
   Exists: 1

@@ -41,6 +41,7 @@ public class factBox : MonoBehaviour
         factDatabase.collectFact(factToAccessId);
 
         //Play spawn dialogue box sound
+        FMODUnity.RuntimeManager.PlayOneShot("event:/sfx_dialoguepopup");
 
         //Start dialogue box animation
 
