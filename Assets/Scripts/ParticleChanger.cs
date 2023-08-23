@@ -33,7 +33,7 @@ public class ParticleChanger : MonoBehaviour
             {
                 
                 emission.rateOverTime = 7.5f;
-                main.startSizeMultiplier = 1.4f;
+                //main.startSizeMultiplier = 1.4f;
             }
             else 
             {
