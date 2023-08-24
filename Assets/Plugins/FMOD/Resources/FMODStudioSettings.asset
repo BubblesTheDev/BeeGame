@@ -310,11 +310,7 @@ MonoBehaviour:
   Banks:
   - BeeBank
   - MainMenu
-  BanksToLoad:
-  - BeeBank
-  - Master
-  - Master.strings
-  - MainMenu
+  BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
   AndroidUseOBB: 0
@@ -325,7 +321,7 @@ MonoBehaviour:
   EnableErrorCallback: 0
   SharedLibraryUpdateStage: 0
   SharedLibraryTimeSinceStart: 0
-  CurrentVersion: 131603
+  CurrentVersion: 131605
   HideSetupWizard: 1
   LastEventReferenceScanVersion: 131603
   Platforms:
