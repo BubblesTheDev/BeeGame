@@ -20,7 +20,7 @@ public class DAYTExtScript : MonoBehaviour
     void Update()
     {
      
-        if (tl.time >= 2.5f)
+        if (tl.time >= 3f)
         {
             anim.SetInteger("DayNum", DayNum);
         }
