@@ -42,7 +42,7 @@ public class pollenCollection : MonoBehaviour
         flowers = GameObject.FindGameObjectsWithTag("Flower").ToList();
         agent = GetComponent<NavMeshAgent>();
         audioManager = GetComponent<BeeAudioManager>();
-        
+        GetComponent<ParticleSystem>().Pause();
 
     }
 
@@ -62,10 +62,15 @@ public class pollenCollection : MonoBehaviour
             audioManager.SetBeeAudio(2);
             //start collection sound
             audioManager.PlayCollectionSounds();
+
+            GetComponent<ParticleSystem>().Play();
+            
         }
         else
         {
             audioManager.StopCollectionSounds();
+            GetComponent<ParticleSystem>().Clear();
+            GetComponent<ParticleSystem>().Pause();
         }
 
         //Starts bump animation of pointer if the player fulfills their quota
@@ -107,11 +112,11 @@ public class pollenCollection : MonoBehaviour
             yield return null;
         }
 
-        //Play sound for collecting pollen here
+        
         //Change time of day here
 
 
-        //Stop particle effect of pollen being collected
+        
         //Stop Animation Of Bee collecting Pollen
         
         
@@ -119,10 +124,14 @@ public class pollenCollection : MonoBehaviour
         //Increase the count of pollen, sets the flower to be deactivated to remove from scene (optional),
         //and removes the flower from the list of available places to collect pollen 
         pollenCollected++;
-        //flower.SetActive(false);
-        flower.GetComponent<ParticleSystem>().Stop();
         flowers.Remove(flower);
+
+        //Stop particle effect of pollen being collected
+        flower.GetComponent<ParticleSystem>().Stop();
+
+        //Play sound for collecting pollen here
         RuntimeManager.PlayOneShot("event:/pollencollect");
+
         //Just some final statistic changes to set everything back to normal
         timer = 0;
         collectionTimer.fillAmount = 0;
