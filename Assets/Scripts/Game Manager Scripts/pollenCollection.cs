@@ -84,6 +84,7 @@ public class pollenCollection : MonoBehaviour
         {
             
             audioManager.SetBeeAudio(3);
+
             SceneManager.LoadScene("TransitionScene");
             
         }
