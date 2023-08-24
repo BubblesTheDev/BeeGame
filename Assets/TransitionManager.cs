@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class TransitionManager : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class TransitionManager : MonoBehaviour
         if (timer >= endTime)
         {
             Debug.Log("Change Scene");
+            SceneManager.LoadScene("PlayableDemo");
             //CHANGE SCENE TO NEXT DAY
         }
 

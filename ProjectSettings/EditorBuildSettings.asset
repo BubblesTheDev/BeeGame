@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayableDemo.unity
     guid: 5fb1b815eb0fbd94caa2e7f0a7680ab2
+  - enabled: 1
+    path: Assets/Scenes/TransitionScene.unity
+    guid: cdf13fe1ce242f74789f8b08d5525e83
   m_configObjects: {}

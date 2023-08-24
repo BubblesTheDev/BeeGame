@@ -87,10 +87,10 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638281212372235384
+  lastModified: 638283996638865921
   FileSizes:
   - Name: 
-    Value: 1668
+    Value: 1764
   Exists: 1
 --- !u!114 &-7897336178064355630
 MonoBehaviour:
@@ -531,12 +531,14 @@ MonoBehaviour:
   - {fileID: 6041540542932846083}
   - {fileID: -9097964385319939481}
   - {fileID: 5946705883926243145}
+  - {fileID: 4783052847430808021}
+  - {fileID: 6166824912412856626}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1447282341641574076}
   StringsBanks:
   - {fileID: -8612524068019589695}
-  cacheTime: 638281212372235384
+  cacheTime: 638283996638865921
   cacheVersion: 131603
 --- !u!114 &243948505686148329
 MonoBehaviour:
@@ -607,7 +609,7 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Desktop/MainMenu.bank
   Name: MainMenu
   StudioPath: bank:/MainMenu
-  lastModified: 638270178951531666
+  lastModified: 638283996635527029
   FileSizes: []
   Exists: 1
 --- !u!114 &1263059040472906641
@@ -652,7 +654,7 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638281212372215298
+  lastModified: 638283996638845899
   FileSizes: []
   Exists: 1
 --- !u!114 &1556256873727092521
@@ -927,6 +929,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4783052847430808021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mus_startofday
+  m_EditorClassIdentifier: 
+  Path: event:/Mus_startofday
+  Guid:
+    Data1: 72395389
+    Data2: 1103141137
+    Data3: 2122134694
+    Data4: -2060730822
+  Banks:
+  - {fileID: 1447282341641574076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
 --- !u!114 &5606332332708585388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1062,6 +1091,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 15
   Length: 33000
+--- !u!114 &6166824912412856626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mus_endofday
+  m_EditorClassIdentifier: 
+  Path: event:/Mus_endofday
+  Guid:
+    Data1: 49806487
+    Data2: 1162390525
+    Data3: 82268058
+    Data4: -185583572
+  Banks:
+  - {fileID: 1447282341641574076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2640
 --- !u!114 &6172054994389710684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1189,7 +1245,7 @@ MonoBehaviour:
     Data3: -455568476
     Data4: 1328446052
   Banks:
-  - {fileID: 1447282341641574076}
+  - {fileID: 1106183258637556273}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0

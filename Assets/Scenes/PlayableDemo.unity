@@ -69734,6 +69734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bee Character
       objectReference: {fileID: 0}
+    - target: {fileID: 8460435576161615774, guid: f277b9d51dbc127439a4fd7350e98ca8, type: 3}
+      propertyPath: ShapeModule.m_Position.y
+      value: 0.57
+      objectReference: {fileID: 0}
     - target: {fileID: 9169222884307403243, guid: f277b9d51dbc127439a4fd7350e98ca8, type: 3}
       propertyPath: camTransform
       value: 
