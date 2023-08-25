@@ -38,8 +38,8 @@ public class ParticleChanger : MonoBehaviour
             else 
             {
 
-                emission.rateOverTime = 5;
-                main.startSizeMultiplier = 1;
+                emission.rateOverTime = 6;
+                
             }
             
         }
