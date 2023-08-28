@@ -69,7 +69,7 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Desktop/MainMenu.bank
   Name: MainMenu
   StudioPath: bank:/MainMenu
-  lastModified: 638283996635527029
+  lastModified: 638284225519216375
   FileSizes: []
   Exists: 1
 --- !u!114 &-6774178066679033335
@@ -303,7 +303,7 @@ MonoBehaviour:
   - {fileID: 7385962446344659651}
   StringsBanks:
   - {fileID: 6538916870207662625}
-  cacheTime: 638288203820301006
+  cacheTime: 638288233544150141
   cacheVersion: 131605
 --- !u!114 &452318263433122908
 MonoBehaviour:
@@ -401,7 +401,7 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Desktop/BeeBank.bank
   Name: BeeBank
   StudioPath: bank:/BeeBank
-  lastModified: 638281212370020649
+  lastModified: 638282248024770003
   FileSizes: []
   Exists: 1
 --- !u!114 &3828368251833072626
@@ -527,7 +527,7 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638288203820301006
+  lastModified: 638288233544150141
   FileSizes:
   - Name: 
     Value: 1878
@@ -547,7 +547,7 @@ MonoBehaviour:
   Path: Assets/Audio/FmodProject/BeeGame/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638288203820280959
+  lastModified: 638288233544090126
   FileSizes: []
   Exists: 1
 --- !u!114 &8379577712578173827

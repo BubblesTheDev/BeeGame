@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001CD533B52E8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000016390B35078 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,84 +17,13 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SystemI::mixerSuspend                    : Suspending output.
-[LOG] SystemI::mixerResume                     : Resuming output.
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001CC4F7A2E18, queue head = 000001CD7A95D358, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CC4F7A2E18
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CC4F7A2E18
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001CC4F7A3328, queue head = 000001CD7A95D358, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CC4F7A3328
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CC4F7A3328
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001CC4F7A3178, queue head = 000001CD7A95D358, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CC4F7A3178
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CC4F7A3178
-[LOG] SoundI::release                          : amb_factory (000001CD24E80D18)
-[LOG] SoundI::release                          :     amb_factory (000001CA9A37A258)
-[LOG] SoundI::release                          :     amb_factory (000001CC4F7A3178)
-[LOG] SoundI::release                          : amb_wilderness (000001CD7EA9C198)
-[LOG] SoundI::release                          :     amb_wilderness (000001CC57C58CC8)
-[LOG] SoundI::release                          :     amb_wilderness (000001CC4F7A3688)
-[LOG] SoundI::release                          : amb_wilderness (000001CD7EA9AF08)
-[LOG] SoundI::release                          :     amb_wilderness (000001CC57342678)
-[LOG] SoundI::release                          :     amb_wilderness (000001CC4F7A2908)
-[LOG] SoundI::release                          : amb_wilderness (000001CD7EA9C348)
-[LOG] SoundI::release                          :     amb_wilderness (000001CC57C58E68)
-[LOG] SoundI::release                          :     amb_wilderness (000001CC4F7A2FC8)
-[LOG] SoundI::release                          : amb_wilderness (000001CD7EA9B928)
-[LOG] SoundI::release                          :     amb_wilderness (000001CC57341FF8)
-[LOG] SoundI::release                          :     amb_wilderness (000001CC4F7A2E18)
-[LOG] SoundI::release                          : amb_wilderness (000001CD24E80808)
-[LOG] SoundI::release                          :     amb_wilderness (000001CA9A37A0B8)
-[LOG] SoundI::release                          :     amb_wilderness (000001CC4F7A2AB8)
-[LOG] SoundI::release                          : amb_beehive (000001CD7EA9BAD8)
-[LOG] SoundI::release                          :     amb_beehive (000001CC57342338)
-[LOG] SoundI::release                          :     amb_beehive (000001CC4F7A34D8)
-[LOG] SoundI::release                          : amb_pond (000001CD24E81078)
-[LOG] SoundI::release                          :     amb_pond (000001CC57342818)
-[LOG] SoundI::release                          :     amb_pond (000001CC4F7A3328)
-[LOG] SoundI::release                          :  (000001CD25B661F8)
-[LOG] SoundI::release                          :     sfx_pollencollect (000001CBBC523998)
-[LOG] SoundI::release                          :  (000001CD25B66C08)
-[LOG] SoundI::release                          :     sfx_menuselect (000001CA0AAD65F8)
-[LOG] SoundI::release                          :  (000001CD25B68FF8)
-[LOG] SoundI::release                          :     mus_daychange_end (000001CBBC523E78)
-[LOG] SoundI::release                          :  (000001CD25B66928)
-[LOG] SoundI::release                          :     mus_daychange_loop (000001CA0AAD6E18)
-[LOG] SoundI::release                          :  (000001CD25B66EE8)
-[LOG] SoundI::release                          :     mus_daychange_start (000001CA0AAD6938)
-[LOG] SoundI::release                          :  (000001CC4DC92D38)
-[LOG] SoundI::release                          :     sfx_bee_idle (000001CD7F300EC8)
-[LOG] SoundI::release                          :  (000001CC4DC93748)
-[LOG] SoundI::release                          :     sfx_movmentinput (000001CA12D724A8)
-[LOG] SoundI::release                          :  (000001CC4DC94158)
-[LOG] SoundI::release                          :     sfx_bee_move (000001CA12D72B28)
-[LOG] SoundI::release                          :  (000001CC4DC92778)
-[LOG] SoundI::release                          :     sfx_pollencollecting (000001CA12D72168)
-[LOG] SoundI::release                          :  (000001CD25B674A8)
-[LOG] SoundI::release                          :     sfx_dialoguepopup_01 (000001CA0AAD6118)
-[LOG] SoundI::release                          :  (000001CC4DC93A28)
-[LOG] SoundI::release                          :     sfx_dialoguepopup_02 (000001CD7F301548)
-[LOG] SoundI::release                          :  (000001CC4DC92BC8)
-[LOG] SoundI::release                          :     sfx_dialoguepopup_03 (000001CD7F300B88)
-[LOG] SoundI::release                          :  (000001CC4DC917A8)
-[LOG] SoundI::release                          :     sfx_dialoguepopup_04 (000001CA12D727E8)
-[LOG] SoundI::release                          :  (000001CC4DC94888)
-[LOG] SoundI::release                          :     sfx_dialoguepopup_05 (000001CA12D72988)
-[LOG] SoundI::release                          :  (000001CC4DC93188)
-[LOG] SoundI::release                          :     sfx_dialoguepopup_06 (000001CD7F3009E8)
-[LOG] SoundI::release                          :  (000001CC4DC932F8)
-[LOG] SoundI::release                          :     Sound_Bee_Buzz (000001CD7FAB9898)
-[LOG] SoundI::release                          :  (000001CC4DC94CD8)
-[LOG] SoundI::release                          :     sfx_startsound (000001CD7FAB9558)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
-[ERR] assert                                   : assertion: 'gSystemInitCount == 0' failed
