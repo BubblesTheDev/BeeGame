@@ -3,7 +3,12 @@ guid: 43f5d0594d4e0ef4bb0b2faf57ddf997
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Drone_texture.png
+    second: {fileID: 2100000, guid: 7de498ddcc89a9c42b7a5073f27446f6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

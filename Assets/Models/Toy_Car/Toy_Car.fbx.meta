@@ -3,7 +3,22 @@ guid: ff1d183cfc6849043a0429e3d27586ac
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: car
+    second: {fileID: 2100000, guid: c9ad735329c7ded4daf3c8970f5832e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hood
+    second: {fileID: 2100000, guid: a5416aedd75a4bc4b89d589b6fcbe51f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tiresAndSeats
+    second: {fileID: 2100000, guid: 441af7fa0f371f549b9b822b7846e599, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
