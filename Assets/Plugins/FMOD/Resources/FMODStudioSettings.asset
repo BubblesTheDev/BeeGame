@@ -282,9 +282,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switchSettingsMigration: 1
   HasSourceProject: 0
-  HasPlatforms: 0
+  HasPlatforms: 1
   sourceProjectPath: ../../FMODProjects/BeeGame/BeeGame.fspro
-  sourceBankPath: Assets/Audio/FmodProject/BeeGame/Desktop
+  sourceBankPath: Assets/Audio/FmodProject/BeeGame
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -310,7 +310,10 @@ MonoBehaviour:
   Banks:
   - BeeBank
   - MainMenu
-  BanksToLoad: []
+  BanksToLoad:
+  - BeeBank
+  - MainMenu
+  - Master
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
   AndroidUseOBB: 0
@@ -351,7 +354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identifier: 46fbfdf3fc43db0458918377fd40293e
   parentIdentifier: default
-  active: 0
+  active: 1
   Properties:
     LiveUpdate:
       Value: 0
@@ -369,11 +372,11 @@ MonoBehaviour:
       Value: 0
       HasValue: 0
     BuildDirectory:
-      Value: 
-      HasValue: 0
+      Value: HTML5
+      HasValue: 1
     SpeakerMode:
-      Value: 0
-      HasValue: 0
+      Value: 3
+      HasValue: 1
     VirtualChannelCount:
       Value: 0
       HasValue: 0

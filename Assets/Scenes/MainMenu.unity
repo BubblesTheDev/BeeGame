@@ -3784,7 +3784,6 @@ GameObject:
   - component: {fileID: 9203870079681583633}
   - component: {fileID: 7783642029510179345}
   - component: {fileID: 9203870079681583634}
-  - component: {fileID: 9203870079681583636}
   - component: {fileID: 9203870079681583637}
   m_Layer: 6
   m_Name: Button
@@ -3880,37 +3879,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.024
   m_Center: {x: -0.0068953633, y: -0.00009623789, z: 0.0038280662}
---- !u!114 &9203870079681583636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2490194675803259388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1882495832
-      Data2: 1259774616
-      Data3: 198805678
-      Data4: 1228170112
-    Path: event:/MainMenuMusic
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!54 &9203870079681583637
 Rigidbody:
   m_ObjectHideFlags: 0
