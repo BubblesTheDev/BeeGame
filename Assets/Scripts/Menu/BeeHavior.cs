@@ -87,7 +87,7 @@ public class BeeHavior : MonoBehaviour
     {
         if (!playButtonBee)
         {
-            flowerPoint.parent.gameObject.GetComponent<FlowerAnimation>().RussleFlower();
+            //flowerPoint.parent.gameObject.GetComponent<FlowerAnimation>().RussleFlower();
         }
 
         transform.rotation = flowerPoint.rotation;
@@ -107,8 +107,6 @@ public class BeeHavior : MonoBehaviour
 
     public void ExitAndRespawn()
     {
-        if (!playButtonBee)
-        {
             for (int i = 0; i < _mbm.beeSpawnInScene.Count; i++)
             {
                 if (_mbm.beeSpawnInScene[i] == this.gameObject)
@@ -117,17 +115,6 @@ public class BeeHavior : MonoBehaviour
                 }
             }
             _mbm.BeeSpawn();
-        }
-        else
-        {
-            for (int i = 0; i < _mbm.playSwarmBees.Count; i++)
-            {
-                if (_mbm.playSwarmBees[i] == this.gameObject)
-                {
-                    _mbm.playSwarmBees.RemoveAt(i);
-                }
-            }
-        }
 
         Destroy(this.gameObject);
     }
