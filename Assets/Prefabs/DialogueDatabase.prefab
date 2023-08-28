@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5553892954210849871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1449251942614627220}
+  - component: {fileID: 1897102246255257569}
+  m_Layer: 0
+  m_Name: DialogueDatabase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1449251942614627220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5553892954210849871}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.3, y: 0.4, z: -21.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1897102246255257569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5553892954210849871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d2b33875dbbad48aa3f2a763afc325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  facts:
+  - factID: 1
+    factCollected: 0
+    factDialogue: Ooh! You smell kinda like lemony-mint!
+  - factID: 2
+    factCollected: 0
+    factDialogue: "You must be part of the mint family, I think you\u2019re Catmint!"
+  - factID: 3
+    factCollected: 0
+    factDialogue: "What a dashing shade of blue! You\u2019re a special Iris aren't
+      you?"
+  - factID: 4
+    factCollected: 0
+    factDialogue: The Irises I know are usually purple but blue is close enough,
+      I guess...
+  - factID: 5
+    factCollected: 0
+    factDialogue: "Aha! Your large cup-shape leads me to believe that you\u2019re
+      a Poppy."
+  - factID: 6
+    factCollected: 0
+    factDialogue: "I don\u2019t know how you can stand, you look so fragile! But,
+      you actually feel super strong."
+  - factID: 7
+    factCollected: 0
+    factDialogue: You look a little like a Daisy... You must be a Coneflower!
+  - factID: 8
+    factCollected: 0
+    factDialogue: "I\u2019d recognize those light pink petals anywhere!"
+  - factID: 9
+    factCollected: 0
+    factDialogue: "Wheat...I always wondered why humans planted uncolourful things.
+      It\u2019s so unappetizing."
+  timeToShowDaytimeFact: 4
+  factBoxPrefab: {fileID: 5237720285325576629, guid: 4419be5f96b055e4ebf0fb84226333e5, type: 3}
