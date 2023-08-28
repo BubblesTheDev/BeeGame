@@ -14,12 +14,11 @@ public class MenuBeeManager : MonoBehaviour
 
     public List<GameObject> beeSpawnInScene;
 
-    public List<GameObject> playSwarmBees;
-
     private void Start()
     {
         BeeSpawn();
         Invoke("BeeSpawn", Random.Range(0f, 2f));
+        Invoke("BeeSpawn", 1);
         Invoke("BeeSpawn", 1);
     }
 
@@ -56,39 +55,4 @@ public class MenuBeeManager : MonoBehaviour
         _bh.index = beeSpawnInScene.Count;
         beeSpawnInScene.Add(newBee);
     }
-    /*
-    public void PlayButtonSwarm()
-    {
-        if(playSwarmBees.Count != 0)
-        {
-            for(int e = 0; e < playSwarmBees.Count; e++)
-            {
-                playSwarmBees.RemoveAt(e);
-            }
-        }
-
-        for (int i = 0; i < 5; i++)
-        {
-                GameObject newBee = Instantiate(beePrefab, spawnPoints[i].transform.position, transform.rotation);
-                BeeHavior _bh = newBee.GetComponent<BeeHavior>();
-
-                _bh.playButtonBee = true;
-                _bh.flowerPoint = playButtonPoints[i];
-                _bh.exitPoint = spawnPoints[i];
-                _bh._mbm = this;
-
-                _bh.index = i;
-                playSwarmBees.Add(newBee);
-            print("bruh");
-        }
-    }
-
-    public void StopPlayButtonSwarm()
-    {
-        for (int i = 0; i < 5; i++)
-        {
-            playSwarmBees[i].GetComponent<BeeHavior>().TurnToExit();
-        }
-    }
-    */
 }
