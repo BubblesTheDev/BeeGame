@@ -38,14 +38,6 @@ public class DynamicLighting : MonoBehaviour
     public bool collectDebug;
     public pollenCollection pc;
 
-    private dialogueDatabase database;
-    [Space]
-    public int[] startOfDayDialogueIDs = new int[0];
-    public int[] MiddleOfDialogueIDs = new int[0];
-    public int[] EndOfDayDialogueIDs = new int[0];
-
-    private bool MiddleOfDayPlayed;
-    private bool EndOfDayPlayed;
 
     // Start is called before the first frame update
     void Start()
@@ -67,9 +59,7 @@ public class DynamicLighting : MonoBehaviour
 
         timer = 0f;
 
-        database = GameObject.Find("DialogueDatabase").GetComponent<dialogueDatabase>();
 
-        StartCoroutine(timeBeforeFirstFacts());
     }
 
     // Update is called once per frame
@@ -119,12 +109,6 @@ public class DynamicLighting : MonoBehaviour
                 sunTargetColor = sunNightColor;
                 stopCol = true;
 
-
-                if(MiddleOfDayPlayed == false)
-                {
-                    StartCoroutine(database.daytimeFact(MiddleOfDialogueIDs));
-                    MiddleOfDayPlayed = true;
-                }
             }
 
 
@@ -142,12 +126,6 @@ public class DynamicLighting : MonoBehaviour
         {
             nightTime = true;
             nL.SetActive(true);
-
-            if (EndOfDayPlayed == false)
-            {
-                StartCoroutine(database.daytimeFact(EndOfDayDialogueIDs));
-                EndOfDayPlayed = true;
-            }
 
             GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag("nightLighting");
 
@@ -170,11 +148,5 @@ public class DynamicLighting : MonoBehaviour
 
         //Debug.Log(Sun.transform.rotation.y);
 
-    }
-
-    public IEnumerator timeBeforeFirstFacts()
-    {
-        yield return new WaitForSeconds(Random.Range(4f, 7f));
-        StartCoroutine(database.daytimeFact(startOfDayDialogueIDs));
     }
 }

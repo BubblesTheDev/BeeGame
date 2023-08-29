@@ -2,26 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using Unity.AI;
-using UnityEngine.AI;
-using UnityEngine.UI;
 
 public class dialogueDatabase : MonoBehaviour
 {
     [Header("Bee Fact Information")]
     public List<fact> facts = new List<fact>();
-    public float timeForEachText = 1.5f;
-    public GameObject factBoxPrefab;
 
-
-    private GameObject player;
-    private NavMeshAgent agent;
-
-    private void Awake()
+    private void Update()
     {
-        DontDestroyOnLoad(gameObject);
-        player = GameObject.Find("Bee Character");
-        agent = player.GetComponent<NavMeshAgent>();
+        if (Input.GetKeyUp(KeyCode.F1)) logCollectedFacts();
     }
 
     public void collectFact(int factToSetCollected)
@@ -29,32 +18,16 @@ public class dialogueDatabase : MonoBehaviour
         facts.Find(x => x.factID == factToSetCollected).factCollected = true;
     }
 
-    public IEnumerator daytimeFact(int[] daytimeFactIDs)
+    private void logCollectedFacts()
     {
-        agent.isStopped = true;
+        string loggedIds = new string("Logged ID's Include: ");
 
-        if(player.transform.Find("DialogueBox(1)(Clone)")) player.transform.Find("DialogueBox(1)(Clone)").gameObject.SetActive(false);
-
-        GameObject tempObj = Instantiate(factBoxPrefab, GameObject.Find("Bee Character").transform.position, Quaternion.identity, GameObject.Find("Bee Character").transform);
-
-        for (int i = 0; i < daytimeFactIDs.Length; i++)
+        foreach (fact factToCheck in facts)
         {
-            tempObj.transform.Find("DialogueText").gameObject.GetComponent<Text>().text = facts.Find(x => x.factID == daytimeFactIDs[i]).factDialogue;
-            tempObj.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-
-            collectFact(daytimeFactIDs[i]);
-
-            //Play spawn dialogue box sound
-            FMODUnity.RuntimeManager.PlayOneShot("event:/sfx_dialoguepopup");
-
-            yield return new WaitForSeconds(timeForEachText);
+            if (factToCheck.factCollected) loggedIds += factToCheck.factID.ToString() + ", ";
         }
-        yield return new WaitForSeconds(timeForEachText);
 
-
-        if (player.transform.Find("DialogueBox(1)(Clone)")) player.transform.Find("DialogueBox(1)(Clone)").gameObject.SetActive(true);
-        Destroy(tempObj);
-        agent.isStopped = false;
+        Debug.Log(loggedIds);
     }
 }
 
