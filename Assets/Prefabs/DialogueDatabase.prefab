@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1897102246255257569
 MonoBehaviour:
@@ -270,7 +270,7 @@ MonoBehaviour:
   - factID: 112
     factCollected: 0
     factDialogue: "Monoculture crops are prone to pests and diseases so the humans
-      like the spray poisonous stuff to kill them.\n\nCan\u2019t forage that."
+      like to spray poisonous stuff to kill them.\n\nCan\u2019t forage that."
   - factID: 113
     factCollected: 0
     factDialogue: 'WOAH! This thing is HUGE.
@@ -483,3 +483,5 @@ MonoBehaviour:
   - factID: 247
     factCollected: 0
     factDialogue: The world is so vibrant again! What a bee-utiful place to live!
+  timeForEachText: 1.5
+  factBoxPrefab: {fileID: 0}
