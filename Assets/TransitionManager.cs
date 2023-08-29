@@ -9,11 +9,13 @@ public class TransitionManager : MonoBehaviour
 
     float timer;
     public float endTime;
+    public string[] scenes;
+    int DayNum;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        DayNum = DAYTExtScript.DayNum;
     }
 
     // Update is called once per frame
@@ -25,7 +27,7 @@ public class TransitionManager : MonoBehaviour
         if (timer >= endTime)
         {
             Debug.Log("Change Scene");
-            SceneManager.LoadScene("PlayableDemo");
+            SceneManager.LoadScene(scenes[DayNum]);
             //CHANGE SCENE TO NEXT DAY
         }
 

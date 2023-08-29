@@ -12,10 +12,12 @@ public class DAYTExtScript : MonoBehaviour
     public Animator anim;
 
     //FIRST DAY IS DAY 1, NOT DAY 0 
-    public int DayNum;
+    public static int DayNum = 0;
     
     void Start()
     {
+        anim.SetInteger("DayNum", DayNum);
+        DayNum++;
         
     }
 
@@ -24,8 +26,8 @@ public class DAYTExtScript : MonoBehaviour
      
         if (tl.time >= 3f)
         {
+            //anim.SetInteger("DayNum", DayNum);
             anim.SetInteger("DayNum", DayNum);
-            
 
         }
 

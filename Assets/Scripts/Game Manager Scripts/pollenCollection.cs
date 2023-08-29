@@ -34,6 +34,7 @@ public class pollenCollection : MonoBehaviour
     //to switch animation for the pointer
     public Animator pointer;
 
+
     BeeAudioManager audioManager;
     
 
@@ -83,6 +84,7 @@ public class pollenCollection : MonoBehaviour
         if (Vector3.Distance(hive.transform.position, transform.position) <= rangeToDetectFlower*4 && pollenCollected >= pollenQuota)
         {
             
+
             audioManager.SetBeeAudio(2);
 
             SceneManager.LoadScene("TransitionScene");

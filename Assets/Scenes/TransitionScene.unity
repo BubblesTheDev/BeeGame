@@ -707,6 +707,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endTime: 5
+  scenes:
+  - Day2
+  - Day3
+  - Day4
+  - Day5
+  - Day6
+  - Day7
 --- !u!4 &762182128
 Transform:
   m_ObjectHideFlags: 0
@@ -772,7 +779,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tl: {fileID: 2010716905}
   anim: {fileID: 1056370807}
-  DayNum: 1
 --- !u!95 &1056370807 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2013059136909926942, guid: c6687f8ecd0b1e941a637fa586016638, type: 3}
