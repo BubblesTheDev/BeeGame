@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.PlayerSettings;
 
 public class factBox : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class factBox : MonoBehaviour
 
     private void Awake()
     {
-        factDatabase = GameObject.Find("GameManager").GetComponent<dialogueDatabase>();
+        factDatabase = GameObject.Find("DialogueDatabase").GetComponent<dialogueDatabase>();
     }
 
     private void Update()
@@ -45,19 +46,7 @@ public class factBox : MonoBehaviour
 
         //Start dialogue box animation
 
-        StartCoroutine(writeTextOnBox());
-    }
-
-    public IEnumerator writeTextOnBox()
-    {
-        Text tempText = tempObj.transform.Find("DialogueText").gameObject.GetComponent<Text>();
-        int characterNum = factDatabase.facts.Find(x => x.factID == factToAccessId).factDialogue.Count();
-
-        for (int i = 0; i < characterNum; i++)
-        {
-            tempText.text += factDatabase.facts.Find(x => x.factID == factToAccessId).factDialogue[i];
-            yield return new WaitForSeconds(typingSpeed * Time.deltaTime);
-        }
+        tempObj.transform.Find("DialogueText").gameObject.GetComponent<Text>().text += factDatabase.facts.Find(x => x.factID == factToAccessId).factDialogue;
     }
 
     private void OnTriggerEnter(Collider other)
