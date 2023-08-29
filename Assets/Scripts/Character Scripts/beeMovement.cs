@@ -71,8 +71,6 @@ public class beeMovement : MonoBehaviour
 
             //Start idle sound
             audioManager.SetBeeAudio(0);
-
-
         }
 
         
