@@ -64,11 +64,7 @@ public class pollenCollection : MonoBehaviour
         //Detects if player is close to hive after collecting the pollen quota then resets the scene 
         if (Vector3.Distance(hive.transform.position, transform.position) <= rangeToDetectFlower * 4 && pollenCollected >= pollenQuota)
         {
-<<<<<<< Updated upstream
-            
 
-=======
->>>>>>> Stashed changes
             audioManager.SetBeeAudio(2);
 
             SceneManager.LoadScene("TransitionScene");
