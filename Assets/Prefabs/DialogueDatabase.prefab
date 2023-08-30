@@ -47,302 +47,329 @@ MonoBehaviour:
   facts:
   - factID: 1
     factCollected: 0
-    factDialogue: "What a dashing shade of <color=teal>blue</color>! You\u2019re
-      a special <color=teal>Iris</color> aren't you?\n\nThe <color=teal>irises</color>
-      I know are <color=red>usually purple</color> but blue is close enough, I guess..."
+    factDialogue: "What a dashing shade of <color=#3B7CC9>blue</color>! You\u2019re
+      a special <color=#3B7CC9>Iris</color> aren't you?\n\nThe <color=#3B7CC9>irises</color>
+      I know are <color=#8B54CF>usually purple</color> but blue is close enough,
+      I guess..."
   - factID: 2
     factCollected: 0
-    factDialogue: "Ooh! You smell kinda like lemony-mint! You must be part of the
-      mint family, I think you\u2019re Catmint!"
+    factDialogue: "Ooh! You smell kinda like <color=#8B54CF>lemony-mint</color>!\n\nYou
+      must be part of the mint family, I think you\u2019re <color=#8B54CF>Catmint</color>!"
   - factID: 3
     factCollected: 0
     factDialogue: "Aha! Your large cup-shape leads me to believe that you\u2019re
-      a Poppy. I don\u2019t know how you can stand, you look so fragile! But, you
-      actually feel super strong."
+      a <color=#f85507>Poppy</color>.\n\nI don\u2019t know how you can stand, you
+      look so fragile! But, you actually feel <color=#D72222>super strong</color>."
   - factID: 4
     factCollected: 0
-    factDialogue: "You look a little like a Daisy... You must be a Coneflower! I\u2019d
-      recognize those light pink petals anywhere!"
+    factDialogue: "You look a little like a Daisy... You must be a <color=#DA0063>Coneflower</color>!\n\nI\u2019d
+      recognize those <color=#DA0063>light pink</color> petals anywhere!"
   - factID: 5
     factCollected: 0
-    factDialogue: "Oh, I see that you\u2019ve got an abundance of nectar for me today,
-      dear Catmint!"
+    factDialogue: "Oh, I see that you\u2019ve got an <color=#D72222>abundance of
+      nectar</color> for me today, dear <color=#8B54CF>Catmint</color!"
   - factID: 6
     factCollected: 0
-    factDialogue: The hive is gonna love this energy booster!
+    factDialogue: The hive is gonna love this <color=#D72222>energy booster</color>!
   - factID: 7
     factCollected: 0
-    factDialogue: "How do you do, Iris? I see you\u2019ve got loads of nectar and
-      pollen for me! How delightful!"
+    factDialogue: "How do you do, <color=#3B7CC9>Iris</color>? I see you\u2019ve
+      got <color=#D72222>loads of nectar and pollen</color> for me! How delightful!"
   - factID: 8
     factCollected: 0
-    factDialogue: The hive will know of your bountiful service!
+    factDialogue: The hive will know of your <color=#D72222>bountiful service</color>!
   - factID: 9
     factCollected: 0
-    factDialogue: "Hello there, Poppy! You don\u2019t know just how much your protein-rich
-      pollen helps us!"
+    factDialogue: "Hello there, Poppy! You don\u2019t know just how much your <color=#D72222>protein-rich
+      pollen</color> helps us!"
   - factID: 10
     factCollected: 0
-    factDialogue: It makes for a wonderful feast for us bees!
+    factDialogue: It makes for a wonderful <color=#D72222>feast</color> for us bees!
   - factID: 11
     factCollected: 0
-    factDialogue: "Coneflower! You\u2019ve done it again! Nectar AND pollen?"
+    factDialogue: "Coneflower! You\u2019ve done it again! <color=#D72222>Nectar AND
+      pollen</color>?"
   - factID: 12
     factCollected: 0
-    factDialogue: Hotcha! This will keep the hive well-fed for months!
+    factDialogue: Hotcha! This will keep the hive <color=#D72222>well-fed for months</color>!
   - factID: 13
     factCollected: 0
-    factDialogue: "Oh, Catmint! Where have you been? You\u2019re becoming more scarce
-      these days. You may grow up to three feet tall but it\u2019s clear that there
-      aren\u2019t a lot of you..."
+    factDialogue: "Oh, <color=#8b54cf>Catmint</color>! Where have you been?\n\nYou\u2019re
+      becoming more scarce these days. You may grow up to <color=#d72222>three feet
+      tall</color> but it\u2019s clear that there aren\u2019t a lot of you..."
   - factID: 14
     factCollected: 0
-    factDialogue: "But, I\u2019m here and ready to collect the sweet nectar from
-      your flowers that bloom for at least five months."
+    factDialogue: "I\u2019m here and ready to collect the sweet nectar from your
+      flowers that bloom for at least <color=#d72222>five months</color>."
   - factID: 15
     factCollected: 0
-    factDialogue: "Iris! Are you running away from me? You may be small and can only
-      grow up to twelve inches, but don\u2019t think I didn\u2019t notice your disappearance
-      from where I normally find you!"
+    factDialogue: "<color=#3b7cc9>Iris</color>! Are you running away from me?\n\nYou
+      may be small and can only grow up to <color=#d72222>twelve inches</color>,
+      but don\u2019t think I didn\u2019t notice your disappearance from where I normally
+      find you!"
   - factID: 16
     factCollected: 0
-    factDialogue: Where else would I find such a large amount of nectar and pollen?
-      My hive would surely be disappointed if I lose you especially because you only
-      bloom for a month!
+    factDialogue: 'Where else would I find such a <color=#d72222>large amount of
+      nectar and pollen</color>?
+
+
+      My hive would surely be disappointed if
+      I lose you especially because you only <color=#d72222>bloom for a month</color>!'
   - factID: 17
     factCollected: 0
-    factDialogue: "Whew... you are not an easy flower to find, Poppy. Though your
-      petals are a striking orange colour - which I quite like compared to your pink
-      and red colours - you\u2019re not in your usual spot..."
+    factDialogue: "Whew... you are not an easy flower to find, <color=#f85507>Poppy</color>.\n\nThough
+      your petals are a striking <color=#f85507>orange</color> colour - which I quite
+      like compared to your <color=#d72222>pink and red colours</color> - you\u2019re
+      not in your usual spot..."
   - factID: 18
     factCollected: 0
     factDialogue: "Bah, whatever, you\u2019re here despite your short bloom time
-      of a month and it\u2019s time to collect your pollen full of protein!"
+      of a month and it\u2019s time to collect your <color=#d72222>pollen full of
+      protein</color>!"
   - factID: 19
     factCollected: 0
-    factDialogue: "Boy, I thought I\u2019d lost you, Coneflower! Even though you
-      can grow up to five feet tall, there\u2019s starting to be less of you..."
+    factDialogue: "Boy, I thought I\u2019d lost you, <color=#da0063>Coneflower</color>!
+      Even though you can grow up to <color=#d72222>five feet tall</color>, there\u2019s
+      starting to be less of you..."
   - factID: 20
     factCollected: 0
-    factDialogue: "But, I\u2019m not worried, your bee-utiful bloom lasts from the
-      middle of summer \u2018till fall! Plenty of time to collect your pollen and
-      nectar."
+    factDialogue: "Your bee-utiful bloom lasts from the <color=#d72222>middle of
+      summer \u2018till fall</color>! Plenty of time to collect your pollen and nectar."
   - factID: 21
     factCollected: 0
-    factDialogue: "...I\u2019m scared to eat from this flower."
+    factDialogue: "...I\u2019m <color=#d72222>scared</color> to eat from this flower."
   - factID: 22
     factCollected: 0
-    factDialogue: The spray taste is kinda funky but... I need the nectar and pollen
-      for my hive.
+    factDialogue: The <color=#d72222>spray taste</color> is kinda funky but... I
+      need the nectar and pollen for my hive.
   - factID: 23
     factCollected: 0
-    factDialogue: "Hmm... I wonder what the humans sprayed on the flowers. It\u2019s
-      weird but, I hope it\u2019s something good!"
+    factDialogue: "Hmm... I wonder what the humans <color=#d72222>sprayed on the
+      flowers</color>. It\u2019s weird but, I hope it\u2019s something good!"
   - factID: 24
     factCollected: 0
-    factDialogue: "Ah, but I still love it. I just saw the humans spray it with something
-      weird... It\u2019s still pretty tasty to me though."
+    factDialogue: "Ah, but I still love it. I just saw the humans <color=#d72222>spray
+      it with something weird</color>... It\u2019s still pretty tasty to me though."
   - factID: 25
     factCollected: 0
-    factDialogue: I was right to think the humans were spraying the flowers with
-      something weird.
+    factDialogue: I was right to think the humans were <color=#d72222>spraying the
+      flowers</color> with something weird.
   - factID: 26
     factCollected: 0
-    factDialogue: "They dance differently now. It\u2019s hard to talk to them like
-      this."
+    factDialogue: "They <color=#d72222>dance differently now</color>. It\u2019s <color=#d72222>hard
+      to talk</color> to them like this."
   - factID: 27
     factCollected: 0
-    factDialogue: There have been more humans around lately... Are they trying to
-      get rid of me?
+    factDialogue: 'There have been more humans around lately...
+
+
+      Are they
+      <color=#d72222>trying to get rid</color> of me?'
   - factID: 28
     factCollected: 0
     factDialogue: "They\u2019ve been doing it so much, that I think it\u2019s affecting
-      the way my coworkers communicate with me!"
+      the way my coworkers <color=#d72222>communicate</color> with me!"
   - factID: 29
     factCollected: 0
-    factDialogue: "I\u2019ve never been so disoriented before. Maybe it has to do
-      with what they call chemicals."
+    factDialogue: "I\u2019ve never been so disoriented before.\n\nMaybe it has to
+      do with what they call <color=#d72222>chemicals</color>."
   - factID: 30
     factCollected: 0
-    factDialogue: "There are fewer and fewer flowers... Just what do the humans think
-      they\u2019re doing?"
+    factDialogue: "There are <color=#d72222>fewer and fewer flowers</color>...\n\nJust
+      what do the humans think they\u2019re doing?"
   - factID: 31
     factCollected: 0
-    factDialogue: Woah...my memory is feeling a bit fuzzy.
+    factDialogue: Woah...my memory is feeling a bit <color=#d72222>fuzzy</color>.
   - factID: 32
     factCollected: 0
-    factDialogue: "I can\u2019t believe they would do that! Can\u2019t they see that
-      my pollination helps them too?"
+    factDialogue: "I can\u2019t believe they would do that!\n\nCan\u2019t they see
+      that my pollination <color=#d72222>helps them</color> too?"
   - factID: 33
     factCollected: 0
-    factDialogue: Where did all the flowers go? How am I supposed to help my hive
-      now?
+    factDialogue: 'Where did all the flowers go?
+
+
+      How am I supposed to <color=#d72222>help
+      my hive</color> now?'
   - factID: 34
     factCollected: 0
-    factDialogue: Must be from all the chemicals humans are spraying.
+    factDialogue: Must be from all the <color=#d72222>chemicals</color> humans are
+      spraying.
   - factID: 35
     factCollected: 0
     factDialogue: "Urgh... their plan must be working, it\u2019s getting really hard
-      to do my job now."
+      to do my <color=#d72222>job</color> now."
   - factID: 36
     factCollected: 0
-    factDialogue: "I need to travel further and further for these flowers. Sometimes
-      I wonder if I\u2019ll ever make it back to my hive."
+    factDialogue: "I need to travel <color=#d72222>further and further</color> for
+      these flowers.\n\nSometimes I wonder if I\u2019ll ever make it back to my hive."
   - factID: 37
     factCollected: 0
-    factDialogue: I- I think I see more of my flower friends!
+    factDialogue: I- I think I see more of my <color=#d72222>flower friends</color>!
   - factID: 38
     factCollected: 0
-    factDialogue: But wait... are those new friends too? How exciting!!!
+    factDialogue: But wait... are those <color=#d72222>new</color> friends too? How
+      exciting!!!
   - factID: 39
     factCollected: 0
-    factDialogue: "You weren\u2019t here before... could this be the work of humans?"
+    factDialogue: "You weren\u2019t here before... could this be the <color=#d72222>work
+      of humans</color>?"
   - factID: 40
     factCollected: 0
-    factDialogue: The strange smell from those chemicals is also going away, I no
-      longer feel dizzy when I see my flower friends!
+    factDialogue: The strange smell from those chemicals is also <color=#d72222>going
+      away</color>, I no longer feel dizzy when I see my flower friends!
   - factID: 41
     factCollected: 0
-    factDialogue: How interesting... humans can be helpful for us bees! This is wonderful
-      news!
+    factDialogue: 'How interesting... humans can be <color=#d72222>helpful</color>
+      for us bees!
+
+
+      This is wonderful news!'
   - factID: 42
     factCollected: 0
-    factDialogue: "My, my! I believe you are Zinna! I haven\u2019t seen as many Zinnias
-      as beautiful or colourful as you!"
+    factDialogue: "My, my! I believe you are <color=#d953a5>Zinna</color>!\n\nI haven\u2019t
+      seen as many Zinnias as beautiful or colourful as you!"
   - factID: 43
     factCollected: 0
-    factDialogue: I see your disc-like centre is quite accommodating to smaller creatures.
-      My tiny bee friends would love to meet you!
+    factDialogue: 'I see your <color=#d72222>disc-like centre</color> is quite accommodating
+      to <color=#d72222>smaller creatures</color>.
+
+
+      My tiny bee friends would
+      love to meet you!'
   - factID: 44
     factCollected: 0
-    factDialogue: "Oh, why, you\u2019re Calibrachoa! There are so many of you too!
-      I guess that\u2019s why my friends call you Million Bells too."
+    factDialogue: "Oh, why, you\u2019re <color=##BD451A>Calibrachoa</color>! There
+      are so many of you too!\n\nI guess that\u2019s why my friends call you <color=##BD451A>Million
+      Bells</color> too."
   - factID: 45
     factCollected: 0
     factDialogue: "I\u2019m so glad you\u2019re here! It looks like I can collect
-      lots of nectar from you. Just what our hive needs!"
+      lots of <color=#d72222>nectar</color> from you.\n\nJust what our hive needs!"
   - factID: 101
     factCollected: 0
-    factDialogue: "Wheat...I always wondered why humans planted uncolourful things.
-      \n\nIt\u2019s so unappetizing."
+    factDialogue: "<color=#885532>Wheat</color>...I always wondered why humans planted
+      uncolourful things. \n\nIt\u2019s so <color=#d72222>unappetizing</color>."
   - factID: 102
     factCollected: 0
-    factDialogue: "Urgh...not the wheat. \n\nI really don\u2019t like this area.
-      So boring."
+    factDialogue: "Urgh...not the <color=#885532>wheat</color>. \n\nI really don\u2019t
+      like this area. So <color=#d72222>boring</color>."
   - factID: 103
     factCollected: 0
-    factDialogue: "Water! I forage the pond sometimes. We use it to crystallize our
-      honey. \n\nIt also keeps my colony cool during the hot season. The temperature
-      of our hive doesn\u2019t just regulate itself."
+    factDialogue: "Water! I forage the pond sometimes. We use it to <color=#053F64>crystallize</color>
+      our honey. \n\nIt also keeps my colony <color=#053F64>cool</color> during the
+      hot season. The temperature of our hive doesn\u2019t just regulate itself."
   - factID: 104
     factCollected: 0
-    factDialogue: "Oh. That\u2019s odd.\n\nI could have sworn this was where my Poppies
-      were."
+    factDialogue: "Oh. That\u2019s <color=#d72222>odd</color>.\n\nI could have sworn
+      this was where my <color=#f85507>Poppies</color> were."
   - factID: 105
     factCollected: 0
     factDialogue: Blegh.
   - factID: 106
     factCollected: 0
-    factDialogue: "Mmm, I love the smell of a stinky pond. \n\nThe smellier, the
-      more nutrients!\n\nWhen water doesn\u2019t smell, I barely even notice it!"
+    factDialogue: "Mmm, I love the smell of a <color=#053F64>stinky pond</color>.
+      The smellier, the more <color=#d72222>nutrients</color>!\n\nWhen water doesn\u2019t
+      smell, I barely even notice it!"
   - factID: 107
     factCollected: 0
     factDialogue: "What on Earth is this? \n\nIt looks like one of the houses, but
-      even bigger. It\u2019s scary."
+      even bigger. It\u2019s <color=#d72222>scary</color>."
   - factID: 108
     factCollected: 0
     factDialogue: "Oh! I can see humans getting food inside. \n\nAt least the humans
-      are getting fed...but what about our colourful flowers?"
+      are getting fed...but what about our <color=#d72222>colourful flowers</color>?"
   - factID: 109
     factCollected: 0
     factDialogue: "I\u2019ve discovered what humans call this practice of planting
-      a lot of one thing. \n\nIt\u2019s called Monoculture Farming.\nSometimes, diverse
-      biodiversity is wiped out just to grow that single crop."
+      a lot of one thing. \n\nIt\u2019s called <color=#885532>Monoculture Farming</color>.
+      Sometimes, diverse biodiversity is <color=#d72222>wiped out</color> just to
+      grow that single crop."
   - factID: 110
     factCollected: 0
-    factDialogue: "The pond is blocked off now!\nI mean, I\u2019m just a tiny bee,
-      I can still forage the water. \n\nThe water tastes a bit dirty though. And
-      not the kind of dirty that I like. It tastes like...chemicals."
+    factDialogue: "The pond is blocked off now! I mean, I\u2019m just a tiny bee,
+      I can still <color=#053F64>forage the water</color>. \n\nThe water tastes a
+      bit dirty though. And not the kind of dirty that I like. It tastes like...<color=#d72222>chemicals</color>."
   - factID: 111
     factCollected: 0
     factDialogue: "I know humans need to buy food in stores.\n\nBut what\u2019s the
-      use of buying food when there are fewer pollinators to help grow the plants
-      that make them?"
+      use of buying food when there are <color=#d72222>fewer pollinators</color>
+      to help grow the plants that make them?"
   - factID: 112
     factCollected: 0
-    factDialogue: "Monoculture crops are prone to pests and diseases so the humans
-      like to spray poisonous stuff to kill them.\n\nCan\u2019t forage that."
+    factDialogue: "Monoculture crops are prone to <color=#d72222>pests and diseases</color>
+      so the humans like to spray <color=#d72222>poisonous stuff</color> to kill
+      them.\n\nCan\u2019t forage that."
   - factID: 113
     factCollected: 0
-    factDialogue: 'WOAH! This thing is HUGE.
+    factDialogue: 'WOAH! This thing is <color=#686868>HUGE</color>. (And kind of
+      ugly.)
 
 
-      (And kind of ugly.)
-
-      What
-      do humans even do in here?'
+      What do humans even do in here?'
   - factID: 114
     factCollected: 0
     factDialogue: "Ever since humans put this big building here, it\u2019s been getting
-      a lot busier."
+      a lot <color=#d72222>busier</color>."
   - factID: 115
     factCollected: 0
-    factDialogue: 'Monoculture crops are prone to pests and diseases so the humans
-      like the spray poisonous stuff to kill them.
-
-
-      Just like humans, bees
-      need a diverse diet too.'
+    factDialogue: Just like humans, bees need a <color=#d72222>diverse diet</color>
+      too.
   - factID: 116
     factCollected: 0
     factDialogue: "I can\u2019t bear the smell of this pond anymore!\_The plants
-      and moss have all died from the chemicals leaking from that big building.\n\nIt\u2019s
-      getting harder every day to keep cool."
+      and moss have all died from the <color=#d72222>chemicals leaking</color> from
+      that big building.\n\nIt\u2019s getting harder every day to <color=#053F64>keep
+      cool</color>."
   - factID: 117
     factCollected: 0
-    factDialogue: I miss my flowers.
+    factDialogue: <color=#d72222>I miss my flowers.</color>
   - factID: 118
     factCollected: 0
-    factDialogue: "Still as boring as ever. At least there\u2019s more colour around
-      it!"
+    factDialogue: "Still as <color=#885532>boring as ever</color>. At least there\u2019s
+      more <color=#d72222>colour</color> around it!"
   - factID: 119
     factCollected: 0
-    factDialogue: This thing is still an eyesore but some of my flower buddies are
-      back!
+    factDialogue: This thing is still an <color=#686868>eyesore</color> but some
+      of my <color=#d72222>flower buddies</color>  are back!
   - factID: 120
     factCollected: 0
     factDialogue: 'Woah! There are many colourful flowers!
 
 
       Some humans are
-      even buying them! I wonder if they have bees around where they live.'
+      even <color=#d72222>buying them</color>! I wonder if they have bees around
+      where they live.'
   - factID: 121
     factCollected: 0
     factDialogue: "I see there are more beehives! And they\u2019re contained in these
-      boxes."
+      <color=#d72222>boxes</color>."
   - factID: 122
     factCollected: 0
-    factDialogue: "They look like they were made by humans. There are so many now.
-      And there\u2019s new bees. This is so exciting!"
+    factDialogue: "They look like they were <color=#d72222>made by humans</color>.
+      There are so many now.\n\nAnd there\u2019s new bees. This is so exciting!"
   - factID: 201
     factCollected: 0
-    factDialogue: Ah, another fun-filled day of collecting pollen and nectar!
+    factDialogue: Ah, another fun-filled day of collecting <color=#D72222>pollen
+      and nectar</color>!
   - factID: 202
     factCollected: 0
-    factDialogue: "Every flower has their own story... Let\u2019s see what these
-      blue ones have to offer!"
+    factDialogue: "Every flower has their own story...\n\nLet\u2019s see what these
+      <color=#3B7CC9>blue</color> ones have to offer!"
   - factID: 203
     factCollected: 0
     factDialogue: I wish I could just curl up into a ball and sleep in the flowers.
   - factID: 204
     factCollected: 0
-    factDialogue: "Like Josh. Josh doesn\u2019t do anything but eat, sleep, and mate!"
+    factDialogue: "Like Josh. Josh doesn\u2019t do anything but <color=#d72222>eat,
+      sleep, and mate</color>!"
   - factID: 205
     factCollected: 0
     factDialogue: "I think that\u2019s enough foraging for the day."
   - factID: 206
     factCollected: 0
-    factDialogue: Now to just bring all this pollen and nectar back to my hive!
+    factDialogue: Now to just bring all this pollen and nectar <color=#d72222>back
+      to my hive</color>!
   - factID: 207
     factCollected: 0
     factDialogue: I am so thankful for all the worker bees. You guys did such a great
@@ -353,95 +380,104 @@ MonoBehaviour:
       flowers again."
   - factID: 209
     factCollected: 0
-    factDialogue: "The pollination I do helps make more plants which I can visit!
-      ... I\u2019m so cool."
+    factDialogue: "The pollination I do helps <color=#d72222>make more plants</color>
+      which I can visit! ... I\u2019m so cool."
   - factID: 210
     factCollected: 0
-    factDialogue: You know, most of my co-workers go back to the hive to sleep when
-      they are tired.
+    factDialogue: You know, most of my co-workers go back to the hive to <color=#d72222>sleep</color>
+      when they are tired.
   - factID: 211
     factCollected: 0
     factDialogue: "I\u2019m just kind of different. I like pushing through until
       I feel satisfied with my tasks."
   - factID: 212
     factCollected: 0
-    factDialogue: "I also can\u2019t rest until I\u2019ve got enough pollen stuck
-      to my hairs. My hive needs this pollen for energy!"
+    factDialogue: "I also can\u2019t rest until I\u2019ve got enough pollen <color=#d72222>stuck
+      to my hairs</color>. My hive needs this pollen for energy!"
   - factID: 213
     factCollected: 0
     factDialogue: "I\u2019m done! Now I feel suitably tired."
   - factID: 214
     factCollected: 0
-    factDialogue: Time to bring all this nectar and pollen back and feed my hive.
+    factDialogue: Time to bring all this nectar and pollen back and <color=#d72222>feed
+      my hive</color>.
   - factID: 215
     factCollected: 0
     factDialogue: Ahhhh, wakey-wakey to me! It is yet another day of foraging.
   - factID: 216
     factCollected: 0
-    factDialogue: Hmm...something feels off though. Maybe I should go check it out.
+    factDialogue: Hmm...something feels <color=#d72222>off</color> though. Maybe
+      I should go check it out.
   - factID: 217
     factCollected: 0
     factDialogue: I do wonder what a world without bees would look like.
   - factID: 218
     factCollected: 0
-    factDialogue: "I don\u2019t think it would be as colourful the way it is right
-      now."
+    factDialogue: "I don\u2019t think it would be as <color=#d72222>colourful</color>
+      the way it is right now."
   - factID: 219
     factCollected: 0
     factDialogue: Phew. All done! Time to bring back all this pollen and nectar yet
       again.
   - factID: 220
     factCollected: 0
-    factDialogue: "Hey, did you know that the honey we produce doesn\u2019t only
-      feed humans?"
+    factDialogue: "Hey, did you know that the <color=#d72222>honey</color> we produce
+      doesn\u2019t only feed humans?"
   - factID: 221
     factCollected: 0
     factDialogue: We also get pesky creatures like birds, raccoons and insects raiding.
   - factID: 222
     factCollected: 0
-    factDialogue: 'They even eat our brood! D:'
+    factDialogue: 'They even eat our <color=#d72222>brood</color>! D:'
   - factID: 223
     factCollected: 0
-    factDialogue: "But that\u2019s the ecosystem for you! A continuous cycle of life.
-      I don\u2019t want things to ever change."
+    factDialogue: "But that\u2019s the <color=#d72222>ecosystem</color> for you!
+      A continuous cycle of life.\n\nI don\u2019t want things to ever change."
   - factID: 224
     factCollected: 0
     factDialogue: "Morning! I didn\u2019t sleep so well."
   - factID: 225
     factCollected: 0
-    factDialogue: In fact, a lot of coworkers seem to be struggling a bit. Oh well.
+    factDialogue: In fact, a lot of coworkers seem to be  <color=#d72222>struggling</color>
+      a bit. Oh well.
   - factID: 226
     factCollected: 0
     factDialogue: A lot of the plants we bees pollinate grow food for humans to eat.
   - factID: 227
     factCollected: 0
     factDialogue: I find it weird that humans would take away our food when they
-      rely on us for a diverse diet.
+      <color=#d72222>rely on us</color> for a diverse diet.
   - factID: 228
     factCollected: 0
-    factDialogue: Today was extra hard for us to pollinate plants.
+    factDialogue: Today was <color=#d72222>extra hard</color> for us to pollinate
+      plants.
   - factID: 229
     factCollected: 0
     factDialogue: Hopefully, this is only temporary and we'll get our flowers back
       again!
   - factID: 230
     factCollected: 0
-    factDialogue: Lately, the air has been so hot and winters have been colder than
-      usual.
+    factDialogue: Lately, the <color=#d72222>air</color> has been so hot and winters
+      have been colder than usual.
   - factID: 231
     factCollected: 0
-    factDialogue: "I wonder if the humans are doing this. They do a lot to harm us,
-      don\u2019t you think?"
+    factDialogue: "I wonder if the humans are doing this.\n\nThey do a lot to harm
+      us, don\u2019t you think?"
   - factID: 232
     factCollected: 0
     factDialogue: I caught Josh sleeping on some flowers again. Ugh.
   - factID: 233
     factCollected: 0
-    factDialogue: I do admit, a lot of the drones are feeling a bit tired these days.
+    factDialogue: I do admit, a lot of the <color=#d72222>drones</color> are feeling
+      a bit tired these days.
   - factID: 234
     factCollected: 0
-    factDialogue: I am so tired! The air is weirdly thick, the pond is stinkier than
-      usual, and the flowers are being poisoned by humans!
+    factDialogue: 'I am so <color=#d72222>tired</color>!
+
+
+      The air is weirdly
+      thick, the pond is stinkier than usual, and the flowers are being poisoned
+      by humans!'
   - factID: 235
     factCollected: 0
     factDialogue: How will we keep going like this?
@@ -453,14 +489,14 @@ MonoBehaviour:
     factDialogue: Another day.
   - factID: 238
     factCollected: 0
-    factDialogue: Josh passed away. It was too hot.
+    factDialogue: Josh passed away. It was <color=#d72222>too hot</color>.
   - factID: 239
     factCollected: 0
     factDialogue: "I didn\u2019t like him, but why do I feel so sad?"
   - factID: 240
     factCollected: 0
-    factDialogue: We're losing so many flowers. The worker bees are having to travel
-      further to forage.
+    factDialogue: We're losing so many flowers. The worker bees are having to <color=#d72222>travel
+      further</color> to forage.
   - factID: 241
     factCollected: 0
     factDialogue: Some don't even come back home.
@@ -470,19 +506,21 @@ MonoBehaviour:
   - factID: 243
     factCollected: 0
     factDialogue: There's something a bit different about today. But why does it
-      feel... good?
+      feel... <color=#d72222>good</color>?
   - factID: 244
     factCollected: 0
     factDialogue: I haven't felt this rejuvenated in so long. All my precious pollen
       and nectar...
   - factID: 245
     factCollected: 0
-    factDialogue: The colony is going to be so happy tonight!
+    factDialogue: The colony is going to be so <color=#d72222>well-fed</color> tonight!
   - factID: 246
     factCollected: 0
-    factDialogue: "There\u2019s colour again. I could cry with happiness!"
+    factDialogue: "There\u2019s <color=#d72222>colour again</color>. I could cry
+      with happiness!"
   - factID: 247
     factCollected: 0
-    factDialogue: The world is so vibrant again! What a bee-utiful place to live!
+    factDialogue: The world is so vibrant again! What a <color=#d72222>bee-utiful</color>
+      place to live!
   timeForEachText: 1.5
   factBoxPrefab: {fileID: 0}
