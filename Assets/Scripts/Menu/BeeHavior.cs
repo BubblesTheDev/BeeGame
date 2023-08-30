@@ -9,6 +9,7 @@ public class BeeHavior : MonoBehaviour
     public Animator _an;
     public Transform flowerPoint;
     public Transform exitPoint;
+    private GameObject particles;
 
     public float speed;
     public int index;
@@ -24,11 +25,13 @@ public class BeeHavior : MonoBehaviour
     {
         _rb = this.gameObject.GetComponent<Rigidbody>();
         _an = this.transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Animator>();
+        particles = transform.GetChild(1).gameObject;
+        particles.SetActive(false);
 
         if (!playButtonBee)
         {
             speed = Random.Range(2f, 6f);
-            Invoke("GlitchFix", 20);
+            Invoke("GlitchFix", 50);
             
         }
         else
@@ -62,7 +65,7 @@ public class BeeHavior : MonoBehaviour
 
             if (!playButtonBee)
             {
-                Invoke("TurnToExit", 1);
+                Invoke("TurnToExit", 2);
             }
         }
 
@@ -85,10 +88,7 @@ public class BeeHavior : MonoBehaviour
 
     public void RotateToFlower()
     {
-        if (!playButtonBee)
-        {
-            //flowerPoint.parent.gameObject.GetComponent<FlowerAnimation>().RussleFlower();
-        }
+        particles.SetActive(true);
 
         transform.rotation = flowerPoint.rotation;
     }
@@ -98,10 +98,11 @@ public class BeeHavior : MonoBehaviour
         transform.LookAt(exitPoint);
         leaving = true;
         moving = true;
+        particles.SetActive(false);
 
         if (!playButtonBee)
         {
-            Invoke("GlitchFix", 20);
+            Invoke("GlitchFix", 50);
         }
     }
 
@@ -122,6 +123,5 @@ public class BeeHavior : MonoBehaviour
     public void GlitchFix()
     {
         ExitAndRespawn();
-        print("oh no");
     }
 }

@@ -10,15 +10,52 @@ public class PlayButton : MonoBehaviour
     public string sceneName;
     EventInstance MainMenuMusic;
 
+    public MeshRenderer _mr;
+    private Color ogMat;
+    public Light sunlight;
+
+    private bool play;
+
+
+    private Color camTargetColor;
+    public Color camSunsetColor;
+    public Color camNightColor;
+    private Color camCurrentColor;
+
+    private Color sunTargetColor;
+    public Color sunSunsetColor;
+    public Color sunNightColor;
+    private Color sunCurrentColor;
+
     private void Awake()
     {
         MainMenuMusic = RuntimeManager.CreateInstance("event:/MainMenuMusic");
         MainMenuMusic.start();
+
+        play = false;
+        ogMat = _mr.materials[0].color;
     }
+
+    private void Update()
+    {
+        
+    }
+
     public void PlayButtonStart()
     {
+        play = true;
         StartCoroutine(PlayStartSound());
         
+    }
+
+    public void PlayButtonHover()
+    {
+        _mr.materials[0].color = Color.green;
+    }
+
+    public void PlayButtonExit()
+    {
+        _mr.materials[0].color = ogMat;
     }
 
     IEnumerator PlayStartSound()
