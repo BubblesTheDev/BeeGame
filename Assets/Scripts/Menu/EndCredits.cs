@@ -97,6 +97,6 @@ public class EndCredits : MonoBehaviour
     {
         Fade();
         yield return new WaitForSeconds(.8f);
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu2");
     }
 }
