@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1897102246255257569
 MonoBehaviour:
@@ -47,8 +47,9 @@ MonoBehaviour:
   facts:
   - factID: 1
     factCollected: 0
-    factDialogue: "What a dashing shade of blue! You\u2019re a special Iris aren't
-      you? The Irises I know are usually purple but blue is close enough, I guess..."
+    factDialogue: "What a dashing shade of <color=teal>blue</color>! You\u2019re
+      a special <color=teal>Iris</color> aren't you?\n\nThe <color=teal>irises</color>
+      I know are <color=red>usually purple</color> but blue is close enough, I guess..."
   - factID: 2
     factCollected: 0
     factDialogue: "Ooh! You smell kinda like lemony-mint! You must be part of the
