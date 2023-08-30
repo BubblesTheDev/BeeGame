@@ -18,7 +18,9 @@ public class MenuBeeManager : MonoBehaviour
     {
         BeeSpawn();
         Invoke("BeeSpawn", Random.Range(0f, 2f));
-        Invoke("BeeSpawn", 1);
+        Invoke("BeeSpawn", Random.Range(0f, 2f));
+        Invoke("BeeSpawn", Random.Range(0f, 2f));
+        Invoke("BeeSpawn", Random.Range(0f, 2f));
         Invoke("BeeSpawn", 1);
     }
 
