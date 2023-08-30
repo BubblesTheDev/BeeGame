@@ -10,14 +10,18 @@ public class DAYTExtScript : MonoBehaviour
 
     public PlayableDirector tl;
     public Animator anim;
+    public DayData DD;
 
     //FIRST DAY IS DAY 1, NOT DAY 0 
-    public static int DayNum = 0;
+    public int DayNum;
     
     void Start()
     {
+
+        DayNum = DD.DayNum;
         anim.SetInteger("DayNum", DayNum);
         DayNum++;
+        DD.DayNum = DayNum;
         
     }
 

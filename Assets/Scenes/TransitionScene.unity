@@ -714,6 +714,7 @@ MonoBehaviour:
   - Day5
   - Day6
   - Day7
+  DD: {fileID: 11400000, guid: 18aa17df6c7eff44cbf5a84ca466172c, type: 2}
 --- !u!4 &762182128
 Transform:
   m_ObjectHideFlags: 0
@@ -779,6 +780,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tl: {fileID: 2010716905}
   anim: {fileID: 1056370807}
+  DD: {fileID: 11400000, guid: 18aa17df6c7eff44cbf5a84ca466172c, type: 2}
+  DayNum: 0
 --- !u!95 &1056370807 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2013059136909926942, guid: c6687f8ecd0b1e941a637fa586016638, type: 3}

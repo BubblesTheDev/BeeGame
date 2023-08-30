@@ -11,11 +11,12 @@ public class TransitionManager : MonoBehaviour
     public float endTime;
     public string[] scenes;
     int DayNum;
+    public DayData DD;
 
     // Start is called before the first frame update
     void Start()
     {
-        DayNum = DAYTExtScript.DayNum;
+        DayNum = DD.DayNum;
     }
 
     // Update is called once per frame
