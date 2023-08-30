@@ -15,35 +15,59 @@ public class PlayButton : MonoBehaviour
     public Light sunlight;
 
     private bool play;
-
-
-    private Color camTargetColor;
-    public Color camSunsetColor;
-    public Color camNightColor;
-    private Color camCurrentColor;
+    private bool play2;
+    private float startPlayTime;
 
     private Color sunTargetColor;
     public Color sunSunsetColor;
     public Color sunNightColor;
-    private Color sunCurrentColor;
+    public Color sunCurrentColor;
 
     private void Awake()
     {
         MainMenuMusic = RuntimeManager.CreateInstance("event:/MainMenuMusic");
         MainMenuMusic.start();
 
+        sunCurrentColor = sunlight.color;
+
         play = false;
+        play2 = false;
         ogMat = _mr.materials[0].color;
     }
 
     private void Update()
     {
-        
+        if (play && play2 == false)
+        {
+            float t = (Time.time - startPlayTime) / 1f;
+            Color sunColor1 = Color.Lerp(sunCurrentColor, sunSunsetColor, t);
+            sunlight.color = sunColor1;
+
+            print(t);
+
+            if(t >= 1)
+            {
+                print("bruh");
+                play2 = true;
+                sunCurrentColor = sunColor1;
+                startPlayTime = Time.time;
+            }
+        }
+
+        if (play2)
+        {
+            float t = (Time.time - startPlayTime) / 1f;
+            Color sunColor1 = Color.Lerp(sunCurrentColor, sunNightColor, t);
+            sunlight.color = sunColor1;
+
+            print(t);
+        }
     }
 
     public void PlayButtonStart()
     {
         play = true;
+        startPlayTime = Time.time;
         StartCoroutine(PlayStartSound());
         
     }
@@ -63,7 +87,7 @@ public class PlayButton : MonoBehaviour
         //MainMenuMusic.setPaused(true);
         MainMenuMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         RuntimeManager.PlayOneShot("event:/GameStart");
-        yield return new WaitForSeconds(1.6f);
+        yield return new WaitForSeconds(2f);
         Debug.Log("changinScenes");
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         //MainMenuMusic.setPaused(false);
