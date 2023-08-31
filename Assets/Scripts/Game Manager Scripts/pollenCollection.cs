@@ -22,7 +22,7 @@ public class pollenCollection : MonoBehaviour
     [SerializeField] private float timeToCollectPollen;
     [SerializeField] private float rangeToDetectFlower;
     public int pollenCollected;
-    [SerializeField] private bool isCollecting;
+    [SerializeField] public bool isCollecting;
     private float timer;
 
     //for lighting

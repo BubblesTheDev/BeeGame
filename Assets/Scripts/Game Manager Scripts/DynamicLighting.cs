@@ -145,7 +145,7 @@ public class DynamicLighting : MonoBehaviour
 
             if (EndOfDayPlayed == false)
             {
-                StartCoroutine(database.daytimeFact(EndOfDayDialogueIDs));
+                StartCoroutine(timeBeforeEndFacts());
                 EndOfDayPlayed = true;
             }
 
@@ -174,7 +174,13 @@ public class DynamicLighting : MonoBehaviour
 
     public IEnumerator timeBeforeFirstFacts()
     {
-        yield return new WaitForSeconds(Random.Range(4f, 7f));
+        yield return new WaitForSeconds(Random.Range(1f, 3f));
         StartCoroutine(database.daytimeFact(startOfDayDialogueIDs));
+    }
+
+    public IEnumerator timeBeforeEndFacts()
+    {
+        yield return new WaitForSeconds(Random.Range(2f, 4f));
+        StartCoroutine(database.daytimeFact(EndOfDayDialogueIDs));
     }
 }
