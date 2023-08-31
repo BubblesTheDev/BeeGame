@@ -65,7 +65,7 @@ public class BeeAudioManager : MonoBehaviour
 
                 movementBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 idleBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-                Debug.Log("Stopped Buzzing");
+                
                 break;
 
 

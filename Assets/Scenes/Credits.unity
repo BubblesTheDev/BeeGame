@@ -5490,6 +5490,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035769568}
   m_CullTransparentMesh: 1
+--- !u!1 &2056640327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2056640328}
+  - component: {fileID: 2056640330}
+  - component: {fileID: 2056640329}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2056640328
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056640327}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6260814920155678213}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000022975, y: -452.16}
+  m_SizeDelta: {x: 676.3542, y: 556.1666}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2056640329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056640327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4e778b02ea874b94fba0a965f1018bc5, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Bees are the most <b>important pollinators</b>  in the world.\r\nPollinators
+    grow <b>a third</b> of our world\u2019s crops and are responsible for much of
+    the food we eat.\r\n\r\nWithout our bees, our lives would change drastically.\r\n\r\nAll
+    positive change - big or small - <b>matters</b>.\r\nLet\u2019s all do our part
+    and save the bees!\r\n\r\nThank you for playing Honey Buzz!"
+--- !u!222 &2056640330
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056640327}
+  m_CullTransparentMesh: 1
 --- !u!1 &2065382804
 GameObject:
   m_ObjectHideFlags: 0
@@ -5858,7 +5942,7 @@ GameObject:
   - component: {fileID: 5184430588998199533}
   - component: {fileID: 5006311480511464062}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6207,7 +6291,7 @@ MonoBehaviour:
     m_LineSpacing: 1.1
   m_Text: "Executive Producer\n\n\nLead Project Manager \n\n\nProject Management
     Support\n\n\nLead Programming\n\n\nProgramming\n\n\n\n\nLead Artist\n\n\nArt\n\n\n\n\nAudio
-    Designer\n\n\nLevel Designers\n\n\n\nGame Concept"
+    Designer\n\n\nLevel Designers\n\n\n\nBeesearch\n\n\n\nGame Concept"
 --- !u!1 &3204183770758295963
 GameObject:
   m_ObjectHideFlags: 0
@@ -6261,8 +6345,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21.227781, y: -1551.8528}
-  m_SizeDelta: {x: 519.5789, y: 1457.6606}
+  m_AnchoredPosition: {x: -21.227781, y: -1951.2775}
+  m_SizeDelta: {x: 519.5789, y: 2309.4812}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3894428022478941894
 MonoBehaviour:
@@ -6284,7 +6368,7 @@ MonoBehaviour:
   fadeToBlackTimer: 0
   timeToSwitch: 0.8
   endTimer: 0
-  endTime: 65
+  endTime: 95
 --- !u!114 &3906100575735303752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6353,8 +6437,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21.227781, y: -1554.6664}
-  m_SizeDelta: {x: 519.5789, y: 1457.6606}
+  m_AnchoredPosition: {x: -21.227781, y: -1889.7782}
+  m_SizeDelta: {x: 519.5789, y: 2172.3252}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5006311480511464062
 MonoBehaviour:
@@ -6516,6 +6600,7 @@ RectTransform:
   m_LocalScale: {x: 0.50488, y: 0.50488, z: 0.50488}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 2056640328}
   - {fileID: 7220747379546035305}
   - {fileID: 5578568768499969819}
   - {fileID: 1657839175999045252}
@@ -6524,7 +6609,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1643.2931}
+  m_AnchoredPosition: {x: 0, y: 1709.2655}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6363619217200941467
@@ -6560,7 +6645,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7220747379546035305}
   m_Layer: 0
-  m_Name: Text
+  m_Name: CreditText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6574,7 +6659,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6909507148705377517}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.635374, y: 695, z: 112.39902}
+  m_LocalPosition: {x: 22.635374, y: -261, z: 112.39902}
   m_LocalScale: {x: 1.0663089, y: 1.0663089, z: 1.0663089}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6716,7 +6801,7 @@ MonoBehaviour:
   m_Text: "\nChris Crowell\n\n\nMichael Wang \n\n\nAaliyah Tran-Tayag\n\n\nMavis
     Yuria Feener\n\n\nAidan Gray-Owen\nColin Billiau\nLucas Mccready\n\n\nTamara
     Ljubicic\n\n\nAbby Norris\nKye-Ting Yang\nAaliyah Tran-Tayag\n\n\nColin Billiau\n\n\nAbby
-    Norris\nLucas Mccready\n\n\nAbby Norris"
+    Norris\nLucas Mccready\n\n\nKye-Ting Yang\nAaliyah Tran-Tayag\n\n\nAbby Norris"
 --- !u!222 &8140385120580309246
 CanvasRenderer:
   m_ObjectHideFlags: 0

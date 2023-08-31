@@ -43,7 +43,7 @@ public class PollenUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckFlowerCount();
+        
     }
     
     public void FlowerCollected()
@@ -117,10 +117,7 @@ public class PollenUI : MonoBehaviour
 
     public void CheckFlowerCount()
     {
-        if (Input.GetKeyDown("l"))
-        {
-            FlowerCollected();
-        }
+        
     }
 
     public void ChangeFlowerUIImg(int index)

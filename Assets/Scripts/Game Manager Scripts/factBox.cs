@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.PlayerSettings;
+
 
 public class factBox : MonoBehaviour
 {

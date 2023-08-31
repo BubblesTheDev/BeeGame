@@ -157,7 +157,7 @@ MonoBehaviour:
   - Master
   - Master.strings
   - MainMenu
-  Scene: PlayableDemo
+  Scene: MainMenu
 --- !u!4 &874587802
 Transform:
   m_ObjectHideFlags: 0

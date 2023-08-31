@@ -56,11 +56,7 @@ public class pollenCollection : MonoBehaviour
             if (Vector3.Distance(flower.transform.position, transform.position) <= rangeToDetectFlower && !isCollecting) StartCoroutine(collectPollen(flower));
         }
 
-        //Starts bump animation of pointer if the player fulfills their quota
-        if (pollenCollected >= pollenQuota)
-        {
-            pointer.SetBool("isFinished", true);
-        }
+        
 
         //Detects if player is close to hive after collecting the pollen quota then resets the scene 
         if (Vector3.Distance(hive.transform.position, transform.position) <= rangeToDetectFlower * 4 && pollenCollected >= pollenQuota)
