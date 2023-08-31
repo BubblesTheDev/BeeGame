@@ -53,22 +53,34 @@ public class UIButtonFunctionality : MonoBehaviour
     public void PressedPlay()
     {
         RuntimeManager.PlayOneShot("event:/sfx_menuselect");
+        masterBus.setVolume(1);
         pauseScreen.SetActive(false);
         beeMove.enabled = true;
         NavMeshAgent nma = beeMove.gameObject.GetComponent<NavMeshAgent>();
         nma.enabled = true;
 
         pauseButton.gameObject.SetActive(true);
+        
     }
 
     public void PressedPause()
     {
         RuntimeManager.PlayOneShot("event:/sfx_menuselect");
+        masterBus.setVolume(0);
         pauseScreen.SetActive(true);
         beeMove.enabled = false;
         NavMeshAgent nma = beeMove.gameObject.GetComponent<NavMeshAgent>();
         nma.enabled = false;
         pauseButton.gameObject.SetActive(false);
+
+        
+        
+        
+        
+        
+        
+            
+        
     }
 
     public void PressedMute()
