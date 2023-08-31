@@ -714,6 +714,7 @@ MonoBehaviour:
   - Day5
   - Day6
   - Day7
+  - Credits
   DD: {fileID: 11400000, guid: 18aa17df6c7eff44cbf5a84ca466172c, type: 2}
 --- !u!4 &762182128
 Transform:

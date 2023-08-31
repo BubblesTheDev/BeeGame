@@ -66,11 +66,33 @@ public class pollenCollection : MonoBehaviour
         if (Vector3.Distance(hive.transform.position, transform.position) <= rangeToDetectFlower * 4 && pollenCollected >= pollenQuota)
         {
 
-            audioManager.SetBeeAudio(2);
+            if (SceneManager.GetActiveScene().name != "Day7")
+            {
+                audioManager.SetBeeAudio(2);
 
-            SceneManager.LoadScene("TransitionScene");
+                SceneManager.LoadScene("TransitionScene");
+            } else
+            {
+                SceneManager.LoadScene("Credits");
+            }
+            
 
         }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            if (SceneManager.GetActiveScene().name != "Day7")
+            {
+                audioManager.SetBeeAudio(2);
+
+                SceneManager.LoadScene("TransitionScene");
+            }
+            else
+            {
+                SceneManager.LoadScene("Credits");
+            }
+        }
+
     }
 
     public IEnumerator collectPollen(GameObject flower)
