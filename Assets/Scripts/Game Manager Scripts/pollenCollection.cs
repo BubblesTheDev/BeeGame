@@ -33,6 +33,7 @@ public class pollenCollection : MonoBehaviour
     public int pollenQuota;
     //to switch animation for the pointer
     public Animator pointer;
+    public PollenUI pUI;
 
 
     BeeAudioManager audioManager;
@@ -114,6 +115,9 @@ public class pollenCollection : MonoBehaviour
         //and removes the flower from the list of available places to collect pollen 
         pollenCollected++;
         flowers.Remove(flower);
+
+        //trigger UI
+        pUI.FlowerCollected();
 
         //Stop particle effect of pollen being collected
         flower.GetComponent<ParticleSystem>().Stop();
