@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: TrashPile
-    second: {fileID: 2100000, guid: c0f7e16c38cdd2a4a8b738ea410e5e50, type: 2}
+    second: {fileID: 2100000, guid: aa37435c5e2297548992884497d3637b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

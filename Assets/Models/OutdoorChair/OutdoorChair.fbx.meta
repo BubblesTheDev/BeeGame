@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ChairBacking2
-    second: {fileID: 2100000, guid: 4c6d63bf66abd054eb220f03c40c4346, type: 2}
+      name: ChairBacking3
+    second: {fileID: 2100000, guid: 2351635055398ab43ad3f121dea2f98c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
