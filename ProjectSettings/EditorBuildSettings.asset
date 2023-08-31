@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LoadingScene.unity
     guid: 83ac597b2fc217e419ef3af5803f0fd1
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/MainMenu2.unity
     guid: c74e2497c65e18c4194ceb38538b4852
   - enabled: 0
     path: Assets/Scenes/Greybox.unity

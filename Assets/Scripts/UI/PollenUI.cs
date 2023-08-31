@@ -22,7 +22,7 @@ public class PollenUI : MonoBehaviour
     {
         _hw = GetComponent<HiveWaypoint>();
         
-        pollenImgGrouping = this.transform.GetChild(0).transform.GetChild(1).transform.GetChild(2).gameObject;
+        pollenImgGrouping = this.transform.GetChild(0).transform.GetChild(0).transform.GetChild(2).gameObject;
 
         for (int i = 0; i < pollenImgGrouping.transform.childCount; i++)
         {

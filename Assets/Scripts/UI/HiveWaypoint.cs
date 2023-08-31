@@ -16,7 +16,7 @@ public class HiveWaypoint : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        img = transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Image>();
+        img = transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).gameObject.GetComponent<Image>();
         off = true;
     }
 
@@ -31,7 +31,7 @@ public class HiveWaypoint : MonoBehaviour
             float minY = img.GetPixelAdjustedRect().height / 2;
             float maxY = Screen.height - minY;
 
-            Vector2 pos = Camera.main.WorldToScreenPoint(new Vector3(hiveTransform.position.x, hiveTransform.position.y + 1.8f, hiveTransform.position.z));
+            Vector2 pos = Camera.main.WorldToScreenPoint(new Vector3(hiveTransform.position.x, hiveTransform.position.y + 4f, hiveTransform.position.z));
 
             pos.x = Mathf.Clamp(pos.x, minX, maxX);
             pos.y = Mathf.Clamp(pos.y, minY, maxY);
