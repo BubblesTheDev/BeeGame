@@ -365,11 +365,11 @@ MonoBehaviour:
       sleep, and mate</color>!"
   - factID: 205
     factCollected: 0
-    factDialogue: "I think that\u2019s enough foraging for the day."
+    factDialogue: Ahh.. I'm so tired from foraging all day!
   - factID: 206
     factCollected: 0
-    factDialogue: Now to just bring all this pollen and nectar <color=#d72222>back
-      to my hive</color>!
+    factDialogue: Once I've collected enough nectar and pollen, I can bring them
+      <color=#d72222>back to my hive</color>!
   - factID: 207
     factCollected: 0
     factDialogue: I am so thankful for all the worker bees. You guys did such a great
@@ -396,10 +396,10 @@ MonoBehaviour:
       to my hairs</color>. My hive needs this pollen for energy!"
   - factID: 213
     factCollected: 0
-    factDialogue: "I\u2019m done! Now I feel suitably tired."
+    factDialogue: Am I done yet? Now I feel suitably tired.
   - factID: 214
     factCollected: 0
-    factDialogue: Time to bring all this nectar and pollen back and <color=#d72222>feed
+    factDialogue: I need to bring all this nectar and pollen back and <color=#d72222>feed
       my hive</color>.
   - factID: 215
     factCollected: 0
@@ -417,8 +417,7 @@ MonoBehaviour:
       the way it is right now."
   - factID: 219
     factCollected: 0
-    factDialogue: Phew. All done! Time to bring back all this pollen and nectar yet
-      again.
+    factDialogue: Phew. It's near the end of another day of foraging!
   - factID: 220
     factCollected: 0
     factDialogue: "Hey, did you know that the <color=#d72222>honey</color> we produce
