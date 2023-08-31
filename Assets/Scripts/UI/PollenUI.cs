@@ -117,10 +117,10 @@ public class PollenUI : MonoBehaviour
 
     public void CheckFlowerCount()
     {
-       // if (Input.GetKeyDown("l"))
-       // {
-        //    FlowerCollected();
-        //}
+        if (Input.GetKeyDown("l"))
+        {
+            FlowerCollected();
+        }
     }
 
     public void ChangeFlowerUIImg(int index)
