@@ -67,7 +67,7 @@ MonoBehaviour:
   - factID: 5
     factCollected: 0
     factDialogue: "Oh, I see that you\u2019ve got an <color=#D72222>abundance of
-      nectar</color> for me today, dear <color=#8B54CF>Catmint</color!"
+      nectar</color> for me today, dear <color=#8B54CF>Catmint</color>!"
   - factID: 6
     factCollected: 0
     factDialogue: The hive is gonna love this <color=#D72222>energy booster</color>!
@@ -239,8 +239,8 @@ MonoBehaviour:
       love to meet you!'
   - factID: 44
     factCollected: 0
-    factDialogue: "Oh, why, you\u2019re <color=##BD451A>Calibrachoa</color>! There
-      are so many of you too!\n\nI guess that\u2019s why my friends call you <color=##BD451A>Million
+    factDialogue: "Oh, why, you\u2019re <color=#BD451A>Calibrachoa</color>! There
+      are so many of you too!\n\nI guess that\u2019s why my friends call you <color=#BD451A>Million
       Bells</color> too."
   - factID: 45
     factCollected: 0
