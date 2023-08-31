@@ -79,7 +79,7 @@ public class pollenCollection : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Debug.isDebugBuild && Input.GetKeyDown(KeyCode.K))
         {
             if (SceneManager.GetActiveScene().name != "Day7")
             {
@@ -92,7 +92,7 @@ public class pollenCollection : MonoBehaviour
                 SceneManager.LoadScene("Credits");
             }
         }
-
+        
     }
 
     public IEnumerator collectPollen(GameObject flower)

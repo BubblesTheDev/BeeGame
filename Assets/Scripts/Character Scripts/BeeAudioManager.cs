@@ -65,7 +65,7 @@ public class BeeAudioManager : MonoBehaviour
 
                 movementBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 idleBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-                //Debug.Log("Collecting");
+                Debug.Log("Stopped Buzzing");
                 break;
 
 
@@ -90,7 +90,11 @@ public class BeeAudioManager : MonoBehaviour
         pollenCollectingSFX.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         isCollecting = false;
     }
-   
+    private void OnDestroy()
+    {
+        movementBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        idleBuzz.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
 
     public void ResumeAudio()
     {
