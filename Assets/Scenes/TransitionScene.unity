@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54ec11a818a73448ac7836b8a77b481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endTime: 5
+  endTime: 7
   scenes:
   - Day2
   - Day3
